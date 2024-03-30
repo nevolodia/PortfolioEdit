@@ -1,0 +1,25 @@
+/* Container */
+
+.pe-image-container {
+	max-width: 100%;
+
+	margin-bottom: 1.0rem;
+}
+
+/* Image */
+
+.pe-image {
+	max-width: 100%;
+}
+
+/* Zoom style overwrite */
+
+[data-rmiz-modal-overlay="visible"] {
+	background-color: rgba(0, 0, 0, 0.84) !important;
+}
+
+/* Style */
+
+.pe-image-round {
+	border-radius: 4px;
+}

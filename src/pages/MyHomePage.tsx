@@ -1,0 +1,70 @@
+import React from "react";
+import PeTitle from "../components/PeTitle";
+import PeImage from "../components/PeImage";
+import happygif from "../assets/images/happy.gif";
+import PeText from "../components/PeText";
+import PeWarp from "../components/PeWarp";
+import PeLink from "../components/PeLink";
+import PeBlock from "../components/PeBlock";
+import PeGallery from "../components/PeGallery";
+
+const MyHomePage: React.FC = () => {
+	return (
+		<>
+			<PeBlock>
+				<PeTitle>
+					Hello, world! <br/>
+					I'm Volodia Kiril Bickov!
+				</PeTitle>
+				<PeText>
+					Since early childhood I have been interested in computer science.
+					From that time I have been working and felt in love with <PeWarp>Golang</PeWarp>, <PeWarp>
+					C#</PeWarp> and <PeWarp>React</PeWarp>.
+				</PeText>
+				<PeImage src={happygif} alt="meme gif" />
+			</PeBlock>
+
+			<PeBlock>
+				<PeTitle size={2}>Education.</PeTitle>
+				<PeText>
+					I am student in <PeLink href="http://r1g.edu.lv/">RV1G</PeLink> and
+					future student in <PeLink href="https://www.tudelft.nl/">Tu Delft university</PeLink>,
+					where I will study Computer Science and Engineering.
+				</PeText>
+				<PeText>
+					In my future I want to focus on <PeWarp>Machine Learning</PeWarp>.
+					Likely, I will try myself in field connected to analysis of <PeWarp>Macroeconomics</PeWarp>.
+				</PeText>
+			</PeBlock>
+
+			<PeBlock>
+				<PeTitle size={2}>Work and Projects.</PeTitle>
+				<PeText>
+					I have created commerce website <PeLink href="https://binatec.eu/">Binatec.eu
+					</PeLink> using <PeWarp>Wordpress</PeWarp> and <PeWarp>Woocommerce</PeWarp>.
+				</PeText>
+				<PeText>
+					My open source contribution includes this very website, which is created using <PeWarp>React
+					</PeWarp> and <PeWarp>Typescript</PeWarp> and is publicly available on <PeLink href="github.com/">
+					Github repository</PeLink>.
+				</PeText>
+			</PeBlock>
+
+			<PeBlock noSpacer>
+				<PeTitle size={2}>Awards.</PeTitle>
+				<PeText>
+					I have won <PeWarp>1st place</PeWarp> in <PeWarp>Latvian Open Olympiad in Economics</PeWarp>
+					in 2024, <PeWarp>2nd place</PeWarp> in <PeWarp>Latvian State Olympiad in Economics</PeWarp> in both
+					2023 and 2024.
+				</PeText>
+				<PeGallery>
+					<PeImage src={happygif} alt="meme gif" />
+					<PeImage src={happygif} alt="meme gif" />
+					<PeImage src={happygif} alt="meme gif" />
+				</PeGallery>
+			</PeBlock>
+		</>
+	);
+}
+
+export default MyHomePage;

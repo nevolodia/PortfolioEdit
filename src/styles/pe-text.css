@@ -1,0 +1,19 @@
+/* Text */
+
+.pe-text {
+	line-height: 1.80;
+}
+
+/* Weight */
+
+.pe-text-bold {
+	font-weight: 900;
+}
+
+.pe-text-normal {
+	font-weight: 400;
+}
+
+.pe-text-light {
+	font-weight: 200;
+}

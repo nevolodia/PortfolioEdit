@@ -1,0 +1,13 @@
+.pe-spacer {
+	width: 100%;
+}
+
+/* Height */
+
+.pe-spacer-normal {
+	height: 2.25rem;
+}
+
+.pe-spacer-tall {
+	height: 4.0rem;
+}

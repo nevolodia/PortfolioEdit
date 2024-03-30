@@ -1,0 +1,70 @@
+@import url('editme.css');
+
+/* Layout variables */
+
+:root {
+	--padding-top: 25px;
+	--padding-y: 25px;
+}
+
+@media (min-width: 576px) {
+	:root {
+		--padding-top: 40px;
+		--padding-y: 50px;
+	}
+}
+
+@media (min-width: 720px) {
+	:root {
+		--padding-y: clamp(50px, calc((100vw - 720px) / 2), 99999px);
+	}
+}
+
+/* Layout base container */
+
+.layout-base {
+	padding: var(--padding-top) var(--padding-y) 0 var(--padding-y);
+}
+
+/* Menu */
+
+.menu {
+	width: 100%;
+
+	margin-bottom: 30px;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+.menu a {
+	margin: 0 20px 0 0;
+}
+
+.site-title {
+	color: var(--site-title-color);
+	font-weight: 900;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	text-decoration: none;
+
+	margin: 0 20px 0 0;
+}
+
+/* Content container */
+
+.content {
+	width: 100%;
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+
+	margin-top: 4rem;
+}
+

@@ -1,0 +1,45 @@
+.pe-title {
+
+}
+
+/* Size */
+
+.pe-title-1 {
+	font-size: calc(1.40rem + 1vw);
+}
+
+.pe-title-2 {
+	font-size: calc(1.225rem + 0.875vw);
+}
+
+.pe-title-3 {
+	font-size: calc(1.05rem + 0.75vw);
+}
+
+@media (min-width: 960px) {
+	.pe-title-1 {
+		font-size: 2.00rem;
+	}
+
+	.pe-title-2 {
+		font-size: 1.75rem;
+	}
+
+	.pe-title-3 {
+		font-size: 1.50rem;
+	}
+}
+
+/* Weight */
+
+.pe-title-bold {
+	font-weight: 900;
+}
+
+.pe-title-normal {
+	font-weight: 600;
+}
+
+.pe-title-light {
+	font-weight: 300;
+}

@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import "bootstrap/dist/js/bootstrap.bundle.js.map";
+import "bootstrap/dist/css/bootstrap.min.css";
+import './styles/app.css';
+import LayoutComponent from "./components/LayoutComponent";
+import The404Page from "./pages/The404Page";
+import MyHomePage from "./pages/MyHomePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<LayoutComponent />}>
+					<Route index element={<MyHomePage />} />
+					<Route path="*" element={<The404Page />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

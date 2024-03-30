@@ -1,0 +1,45 @@
+.pe-warp {
+	align-items: center;
+
+	background-image: radial-gradient(circle, #1c1c1c, #1a1a1a 45%, #101010);
+	border: 1px solid rgb(94, 95, 97);
+	border-radius: 5px;
+
+	white-space: nowrap;
+}
+
+/* Child types */
+
+.pe-warp-text {
+	padding: 2px 5px;
+}
+
+.pe-warp-text {
+	font-size: 0.975rem !important;
+}
+
+.pe-warp-object {
+	display: inline-block;
+	padding: 10px;
+}
+
+.pe-warp-object .pe-image-container {
+	margin-bottom: 0;
+}
+
+.pe-warp-object img {
+	border-radius: 4px;
+}
+
+/* Padding */
+
+.pe-warp-horizontal-size-wide {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* Color */
+
+.pe-warp-color-bright {
+	background-image: radial-gradient(circle, #181818, #232323 60%, #111111);
+}

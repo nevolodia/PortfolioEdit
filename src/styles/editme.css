@@ -1,0 +1,21 @@
+/* Import font(s) here */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+/* Change portfolio variables */
+
+:root {
+	--font-family: 'Inter', sans-serif;
+
+	--background-color: #111111;
+	--text-color: #ffffff;
+	--site-title-color: #de007e;
+
+	--link-underline-color: rgb(234, 43, 150);
+}
+
+/* Change specific styles */
+
+button, a {
+	cursor: crosshair !important;
+}
