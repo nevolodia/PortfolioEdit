@@ -1,0 +1,26 @@
+name: Deploy to DigitalOcean Droplet
+'on':
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to DigitalOcean Droplet
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          key: ${{secrets.KEY}}
+          script: |
+            # Update repository
+            cd ~/repositories/PortfolioEdit
+            git checkout production
+            git pull origin production
+            
+            # Copy build (should be built in advance)
+            # to web server and restart nginx
+            cp -r build/* /var/www/nevolodia.com/html/
+            sudo systemctl restart nginx
