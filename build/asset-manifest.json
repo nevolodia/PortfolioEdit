@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f68d596.css",
-    "main.js": "/static/js/main.8bd2150e.js",
+    "main.css": "/static/css/main.fe52bb72.css",
+    "main.js": "/static/js/main.4443a39a.js",
     "static/media/404-big.gif": "/static/media/404-big.142a0dc56d4bbec5f673.gif",
     "static/media/happy.gif": "/static/media/happy.4a955195c0768916a831.gif",
     "static/media/404.gif": "/static/media/404.86e16d00bb9b39d7874f.gif",
     "static/media/bootstrap.bundle.js.map": "/static/media/bootstrap.bundle.js.977f3ef687fe45845f5c.map",
-    "static/media/diploma_econ_riga_23.jpg": "/static/media/diploma_econ_riga_23.fc1963bd681f5a4193c5.jpg",
-    "static/media/diploma_econ_lv_23.jpg": "/static/media/diploma_econ_lv_23.d90acc2f4acb046a9b8f.jpg",
-    "static/media/diploma_ru_24.jpg": "/static/media/diploma_ru_24.45a3e264dad89ec2b182.jpg",
-    "static/media/diploma_econ_lv_24.jpg": "/static/media/diploma_econ_lv_24.ade5fd468d0533d64cf4.jpg",
+    "static/media/diploma_econ_riga_23.jpg": "/static/media/diploma_econ_riga_23.15b77bf149b2d351319b.jpg",
+    "static/media/diploma_ru_24.jpg": "/static/media/diploma_ru_24.f2918c25b9ecddcea6d4.jpg",
+    "static/media/diploma_econ_lv_23.jpg": "/static/media/diploma_econ_lv_23.15afc375e221dc755bdd.jpg",
+    "static/media/diploma_econ_lv_24.jpg": "/static/media/diploma_econ_lv_24.ea39ff87e40a5a7a2419.jpg",
     "index.html": "/index.html",
-    "main.7f68d596.css.map": "/static/css/main.7f68d596.css.map",
-    "main.8bd2150e.js.map": "/static/js/main.8bd2150e.js.map"
+    "main.fe52bb72.css.map": "/static/css/main.fe52bb72.css.map",
+    "main.4443a39a.js.map": "/static/js/main.4443a39a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f68d596.css",
-    "static/js/main.8bd2150e.js"
+    "static/css/main.fe52bb72.css",
+    "static/js/main.4443a39a.js"
   ]
 }
