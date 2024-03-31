@@ -62,12 +62,14 @@ const MyHomePage: React.FC = () => {
 					2023 and 2024.
 					Furthermore, I have won several other awards, all of which are shown below.
 				</PeText>
-				<PeGallery columns={3}>
-					<PeImage src={diplomaEconLv24} alt="2024 year economics diploma" />
-					<PeImage src={diplomaEconRiga23} alt="2023 year economics riga diploma" />
-					<PeImage src={diplomaRu24} alt="202r year russian language diploma" />
-					<PeImage src={diplomaEconLv23} alt="2023 year economics diploma" />
-				</PeGallery>
+				<PeWarp>
+					<PeGallery columns={3}>
+						<PeImage src={diplomaEconLv24} alt="2024 year economics diploma" />
+						<PeImage src={diplomaEconRiga23} alt="2023 year economics riga diploma" />
+						<PeImage src={diplomaRu24} alt="202r year russian language diploma" />
+						<PeImage src={diplomaEconLv23} alt="2023 year economics diploma" />
+					</PeGallery>
+				</PeWarp>
 			</PeBlock>
 		</>
 	);
