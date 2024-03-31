@@ -1,0 +1,22 @@
+/* Footer */
+
+.footer {
+	width: 100%;
+
+	margin-top: 5rem;
+	padding-bottom: 5rem;
+
+	display: flex;
+	flex-direction: row;
+}
+
+/* Footer rows */
+
+.footer-row {
+	width: calc(50% - 2rem * 1/2);
+	margin-right: 2rem;
+}
+
+.footer-row:last-child {
+	margin-right: 0;
+}
