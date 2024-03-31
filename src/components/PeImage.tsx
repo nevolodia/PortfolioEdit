@@ -9,7 +9,7 @@ interface PeImageProps {
 	caption?: string;
 	alt?: string;
 	width?: string;
-	style?: "normal" | "round";
+	rounded?: boolean;
 	children?: React.ReactNode;
 }
 
@@ -28,12 +28,7 @@ const PeImage = (props: PeImageProps) => {
 		};
 	}, []);
 
-	let styleClass = "";
-	switch (props.style) {
-		case "round":
-			styleClass = "pe-image-round";
-			break;
-	}
+	let roundedClass = props.rounded ? "pe-image-rounded" : "";
 
 	return (
 		<div className="pe-image-container">
@@ -49,7 +44,7 @@ const PeImage = (props: PeImageProps) => {
 				zoomMargin={margin}
 			>
 				<img
-					className={"pe-image " + styleClass}
+					className={"pe-image " + roundedClass}
 					src={props.src}
 					style={{width: props.width}}
 					alt={props.alt}

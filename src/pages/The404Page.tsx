@@ -17,7 +17,7 @@ const The404Page: React.FC = () => {
 			<PeImage src={the404gif}
 			         srcBig={the404gif_big}
 			         alt="404 page gif"
-			         style="round"
+			         rounded
 			/>
 
 			<PeText>

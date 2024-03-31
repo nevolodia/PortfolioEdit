@@ -12,6 +12,12 @@
 	max-width: 100%;
 }
 
+/* Style */
+
+.pe-image-rounded {
+	border-radius: 4px;
+}
+
 /* Zoom style overwrite */
 
 [data-rmiz-modal-overlay="visible"] {
