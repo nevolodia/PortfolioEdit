@@ -3,7 +3,7 @@
 /* Layout variables */
 
 :root {
-	--padding-top: 25px;
+	--padding-top: 20px;
 	--padding-y: 25px;
 }
 
@@ -68,4 +68,3 @@
 	margin-top: 5rem;
 	padding-bottom: 5rem;
 }
-
