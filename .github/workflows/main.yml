@@ -17,8 +17,8 @@ jobs:
           script: |
             # Update repository
             cd ~/repositories/PortfolioEdit
-            git checkout production
-            git pull origin production
+            git checkout server-upload
+            git pull origin server-upload
             
             # Copy build (should be built in advance)
             # to web server and restart nginx
