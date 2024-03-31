@@ -15,7 +15,7 @@
 
 @media (min-width: 576px) {
 	.pe-gallery-2 .pe-gallery-item {
-		width: calc(50% - 1rem);
+		width: calc(50% - 1rem * 1/2);
 		margin-right: 1rem;
 	}
 
@@ -27,7 +27,7 @@
 	/* 3 Columns */
 
 .pe-gallery-3 .pe-gallery-item {
-	width: calc(50% - 1rem);
+	width: calc(50% - 1rem * 1/2);
 	margin-right: 1rem;
 }
 
@@ -39,7 +39,7 @@
 
 @media (min-width: 576px) {
 	.pe-gallery-3 .pe-gallery-item {
-		width: calc(100%/3 - 1rem);
+		width: calc(100%/3 - 1rem * 2/3);
 		margin-right: 1rem;
 	}
 
