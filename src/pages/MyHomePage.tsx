@@ -1,14 +1,18 @@
 import React from "react";
 import PeTitle from "../components/PeTitle";
 import PeImage from "../components/PeImage";
-import happygif from "../assets/images/happy.gif";
-import cssgif from "../assets/images/css.gif";
-import hackermangif from "../assets/images/hackerman.gif";
 import PeText from "../components/PeText";
 import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
+import happygif from "../assets/images/happy.gif";
+import cssgif from "../assets/images/css.gif";
+import hackermangif from "../assets/images/hackerman.gif";
+import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
+import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
+import diplomaEconRiga23 from "../assets/images/diploma_econ_riga_23.jpg";
+import diplomaRu24 from "../assets/images/diploma_ru_24.jpg";
 
 const MyHomePage: React.FC = () => {
 	return (
@@ -58,11 +62,13 @@ const MyHomePage: React.FC = () => {
 					I have won <PeWarp>1st place</PeWarp> in <PeWarp>Latvian Open Olympiad in Economics</PeWarp>
 					in 2024, <PeWarp>2nd place</PeWarp> in <PeWarp>Latvian State Olympiad in Economics</PeWarp> in both
 					2023 and 2024.
+					Furthermore, I have won several other awards, all of which are shown below.
 				</PeText>
-				<PeGallery>
-					<PeImage src={happygif} alt="meme gif" />
-					<PeImage src={cssgif} alt="meme gif" />
-					<PeImage src={hackermangif} alt="meme gif" />
+				<PeGallery columns={3}>
+					<PeImage src={diplomaEconLv24} alt="2024 year economics diploma" />
+					<PeImage src={diplomaEconRiga23} alt="2023 year economics riga diploma" />
+					<PeImage src={diplomaRu24} alt="202r year russian language diploma" />
+					<PeImage src={diplomaEconLv23} alt="2023 year economics diploma" />
 				</PeGallery>
 			</PeBlock>
 		</>
