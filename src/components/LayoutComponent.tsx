@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 import "../styles/layout.css";
 import PeLink from "./PeLink";
+import React from "react";
+import Footer from "./Footer";
 
 const LayoutComponent = () => {
 	return (
@@ -28,12 +30,7 @@ const LayoutComponent = () => {
 				<Outlet/>
 			</div>
 
-			<div className="footer">
-				<p>
-					© 2024 Grade
-				</p>
-			</div>
-
+			<Footer />
 		</div>
 	)
 };
