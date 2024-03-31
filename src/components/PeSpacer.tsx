@@ -1,17 +1,20 @@
 import "../styles/pe-spacer.css";
 
 interface PeSpacerProps {
-	height?: 1 | 2;
+	height?: "small" | "normal" | "tall";
 }
 
 const PeSpacer = (props: PeSpacerProps) => {
 	let heightClass = "";
 	switch (props.height) {
+		case "small":
+			heightClass = "pe-spacer-small";
+			break;
 		default:
-		case 1:
+		case "normal":
 			heightClass = "pe-spacer-normal";
 			break;
-		case 2:
+		case "tall":
 			heightClass = "pe-spacer-tall";
 			break;
 	}

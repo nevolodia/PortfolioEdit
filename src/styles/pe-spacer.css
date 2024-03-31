@@ -4,6 +4,10 @@
 
 /* Height */
 
+.pe-spacer-small {
+	height: 1.0rem;
+}
+
 .pe-spacer-normal {
 	height: 2.5rem;
 }
