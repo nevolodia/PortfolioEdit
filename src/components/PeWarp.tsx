@@ -6,7 +6,7 @@ interface PeTextProps {
 	children?: React.ReactNode;
 }
 
-const PeText = (props: PeTextProps) => {
+const PeWarp = (props: PeTextProps) => {
 	let warpClass = "";
 	switch (typeof props.children) {
 		case "string":
@@ -38,4 +38,4 @@ const PeText = (props: PeTextProps) => {
 	)
 };
 
-export default PeText;
+export default PeWarp;
