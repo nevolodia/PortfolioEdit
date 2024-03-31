@@ -7,8 +7,6 @@ import PeLink from "../components/PeLink";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
 import happygif from "../assets/images/happy.gif";
-import cssgif from "../assets/images/css.gif";
-import hackermangif from "../assets/images/hackerman.gif";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
 import diplomaEconRiga23 from "../assets/images/diploma_econ_riga_23.jpg";
