@@ -3,13 +3,13 @@
 /* Layout variables */
 
 :root {
-	--padding-top: 20px;
+	--padding-navbar-top: 20px;
 	--padding-y: 25px;
 }
 
 @media (min-width: 576px) {
 	:root {
-		--padding-top: 40px;
+		--padding-navbar-top: 40px;
 		--padding-y: 50px;
 	}
 }
@@ -23,7 +23,7 @@
 /* Layout base container */
 
 .layout-base {
-	padding: var(--padding-top) var(--padding-y) 0 var(--padding-y);
+	padding: var(--padding-navbar-top) var(--padding-y) 0 var(--padding-y);
 }
 
 /* Menu */
