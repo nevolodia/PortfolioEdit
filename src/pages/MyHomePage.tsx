@@ -2,6 +2,8 @@ import React from "react";
 import PeTitle from "../components/PeTitle";
 import PeImage from "../components/PeImage";
 import happygif from "../assets/images/happy.gif";
+import cssgif from "../assets/images/css.gif";
+import hackermangif from "../assets/images/hackerman.gif";
 import PeText from "../components/PeText";
 import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
@@ -59,8 +61,8 @@ const MyHomePage: React.FC = () => {
 				</PeText>
 				<PeGallery>
 					<PeImage src={happygif} alt="meme gif" />
-					<PeImage src={happygif} alt="meme gif" />
-					<PeImage src={happygif} alt="meme gif" />
+					<PeImage src={cssgif} alt="meme gif" />
+					<PeImage src={hackermangif} alt="meme gif" />
 				</PeGallery>
 			</PeBlock>
 		</>
