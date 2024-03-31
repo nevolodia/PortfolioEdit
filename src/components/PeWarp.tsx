@@ -2,7 +2,7 @@ import "../styles/pe-warp.css";
 
 interface PeTextProps {
 	horizontalSize?: "wide" | "normal";
-	color?: "normal" | "bright";
+	style?: "normal" | "bright";
 	children?: React.ReactNode;
 }
 
@@ -25,7 +25,7 @@ const PeWarp = (props: PeTextProps) => {
 	}
 
 	let colorClass = "";
-	switch (props.color) {
+	switch (props.style) {
 		case "bright":
 			colorClass = "pe-warp-color-bright";
 			break;

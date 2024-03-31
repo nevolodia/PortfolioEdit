@@ -41,5 +41,5 @@ p .pe-warp-text {
 /* Color */
 
 .pe-warp-color-bright {
-	background-image: radial-gradient(circle, #181818, #232323 60%, #111111);
+	background-image: radial-gradient(circle, #181818, #1f1f1f 45%, #0c0c0c);
 }
