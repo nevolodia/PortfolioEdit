@@ -23,6 +23,10 @@ body {
 #root {
 	width: 100%;
 	height: 100%;
+
+	/* Do not hide on image zoom, but
+	do not interact with zoom layout */
+	overflow-y: auto;
 }
 
 code {
