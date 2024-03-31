@@ -8,7 +8,6 @@ interface PeTextProps {
 
 const PeText = (props: PeTextProps) => {
 	let warpClass = "";
-	console.log(typeof props.children);
 	switch (typeof props.children) {
 		case "string":
 			warpClass = "pe-warp-text";
