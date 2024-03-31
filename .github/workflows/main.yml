@@ -17,7 +17,6 @@ jobs:
           script: |
             # Update repository
             cd ~/repositories/PortfolioEdit
-            git checkout server-upload
             git pull origin server-upload
             
             # Copy build (should be built in advance)
