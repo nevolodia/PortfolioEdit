@@ -4,6 +4,10 @@
 	flex-direction: row;
 }
 
+.pe-gallery .pe-image-container {
+	margin-bottom: 1rem;
+}
+
 /* Column count */
 
 	/* 2 Columns */
