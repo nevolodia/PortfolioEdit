@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.82a1c38d.css",
-    "main.js": "/static/js/main.292971b7.js",
+    "main.css": "/static/css/main.520332c5.css",
+    "main.js": "/static/js/main.1d85ef2e.js",
+    "static/media/meingermany.jpg": "/static/media/meingermany.d5f5fa064af549f9d315.jpg",
     "static/media/404-big.gif": "/static/media/404-big.142a0dc56d4bbec5f673.gif",
     "static/media/hackerman.gif": "/static/media/hackerman.67886207464d5ef037f2.gif",
-    "static/media/happy.gif": "/static/media/happy.4a955195c0768916a831.gif",
     "static/media/404.gif": "/static/media/404.86e16d00bb9b39d7874f.gif",
     "static/media/cv1.jpg": "/static/media/cv1.295fe23f6f80f72c1600.jpg",
     "static/media/diploma_econ_riga_23.jpg": "/static/media/diploma_econ_riga_23.7ac6b1570daf7b158a19.jpg",
@@ -12,11 +12,11 @@
     "static/media/diploma_econ_lv_23.jpg": "/static/media/diploma_econ_lv_23.af9aac4eefd3d35ed445.jpg",
     "static/media/diploma_econ_lv_24.jpg": "/static/media/diploma_econ_lv_24.426c5aeae623a825bc20.jpg",
     "index.html": "/index.html",
-    "main.82a1c38d.css.map": "/static/css/main.82a1c38d.css.map",
-    "main.292971b7.js.map": "/static/js/main.292971b7.js.map"
+    "main.520332c5.css.map": "/static/css/main.520332c5.css.map",
+    "main.1d85ef2e.js.map": "/static/js/main.1d85ef2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.82a1c38d.css",
-    "static/js/main.292971b7.js"
+    "static/css/main.520332c5.css",
+    "static/js/main.1d85ef2e.js"
   ]
 }
