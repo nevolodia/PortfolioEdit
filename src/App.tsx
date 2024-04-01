@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import The404Page from "./pages/The404Page";
 import MyHomePage from "./pages/MyHomePage";
 import MyProjectsPage from "./pages/MyProjects";
+import MyResumePage from "./pages/MyResume";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Route path="/" element={<Layout />}>
 					<Route index element={<MyHomePage />} />
 					<Route path="projects" element={<MyProjectsPage />} />
+					<Route path="resume" element={<MyResumePage />} />
 					<Route path="*" element={<The404Page />} />
 				</Route>
 			</Routes>
