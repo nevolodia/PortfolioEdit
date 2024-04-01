@@ -3,26 +3,36 @@
 .footer {
 	width: 100%;
 
-	margin-top: 6rem;
+	margin-top: 3rem;
 	padding-bottom: 1rem;
 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 }
 
 @media (min-width: 768px) {
 	.footer {
+		margin-top: 6rem;
 		padding-bottom: 3rem;
+
+		flex-direction: row;
 	}
 }
 
 /* Footer rows */
 
 .footer-row {
-	width: calc(50% - 2rem * 1/2);
-	margin-right: 2rem;
+	width: 100%;
+	margin-right: 0;
 }
 
-.footer-row:last-child {
-	margin-right: 0;
+@media (min-width: 768px) {
+	.footer-row {
+		width: calc(50% - 2rem * 1/2);
+		margin-right: 2rem;
+	}
+
+	.footer-row:last-child {
+		margin-right: 0;
+	}
 }
