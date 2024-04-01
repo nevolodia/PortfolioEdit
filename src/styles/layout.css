@@ -31,13 +31,19 @@
 .menu {
 	width: 100%;
 
-	margin-bottom: 35px;
+	margin-bottom: 2rem;
 
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: flex-start;
+}
+
+@media (min-width: 576px) {
+	.menu {
+		margin-bottom: 3rem;
+	}
 }
 
 .menu a {
