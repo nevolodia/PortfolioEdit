@@ -6,6 +6,7 @@ import './styles/app.css';
 import Layout from "./components/Layout";
 import The404Page from "./pages/The404Page";
 import MyHomePage from "./pages/MyHomePage";
+import MyProjectsPage from "./pages/MyProjects";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<MyHomePage />} />
+					<Route path="projects" element={<MyProjectsPage />} />
 					<Route path="*" element={<The404Page />} />
 				</Route>
 			</Routes>
