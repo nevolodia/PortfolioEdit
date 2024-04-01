@@ -34,6 +34,10 @@ p .pe-warp-text {
 	margin-bottom: 0;
 }
 
+.pe-warp-object .pe-gallery-item {
+	margin-bottom: 1rem;
+}
+
 .pe-warp-object img {
 	border-radius: 4px;
 }

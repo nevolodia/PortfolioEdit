@@ -36,7 +36,6 @@ const PeImage = (props: PeImageProps) => {
 			<img
 				className={"pe-image " + roundedClass}
 				src={props.src}
-				style={{maxWidth: props.maxWidth}}
 				alt={props.alt}
 			/>
 			<figcaption>{props.caption}</figcaption>
@@ -44,21 +43,24 @@ const PeImage = (props: PeImageProps) => {
 	);
 
 	return (
-		<div className="pe-image-container">
+		<div
+			className="pe-image-container"
+			style={{maxWidth: "min(100%, " + props.maxWidth + ")"}}
+		>
 			{props.noZoom ? imageContent :
-			<Zoom
-				ZoomContent={({img}) => (
-					<div>
-						{img}
-					</div>
-				)}
-				zoomImg={{
-					src: props.srcBig ? props.srcBig : props.src,
-				}}
-				zoomMargin={margin}
-			>
-				{imageContent}
-			</Zoom>
+				<Zoom
+					ZoomContent={({img}) => (
+						<div>
+							{img}
+						</div>
+					)}
+					zoomImg={{
+						src: props.srcBig ? props.srcBig : props.src,
+					}}
+					zoomMargin={margin}
+				>
+					{imageContent}
+				</Zoom>
 			}
 		</div>
 	)
