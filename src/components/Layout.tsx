@@ -13,17 +13,17 @@ const Layout = () => {
 					<a className="site-title" href="/">
 						Volodia Kiril Bickov
 					</a>
-					<PeLink href="/login/" horizontalSize="wide">
+					<PeLink href="/" horizontalSize="wide">
 						My Home
 					</PeLink>
-					<PeLink href="/login/" horizontalSize="wide">
+					<PeLink href="/projects/" horizontalSize="wide">
 						My Projects
 					</PeLink>
-					<PeLink href="/login/" horizontalSize="wide">
-						My Blog
+					<PeLink href="/resume/" horizontalSize="wide">
+						My Resume
 					</PeLink>
-					<PeLink href="/login/" horizontalSize="wide">
-						My Awards
+					<PeLink href="/contacts/" horizontalSize="wide">
+						My Contacts
 					</PeLink>
 				</div>
 
