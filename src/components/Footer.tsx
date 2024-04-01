@@ -21,6 +21,7 @@ const Footer = () => {
 					Find me here: <br/>
 					<PeLink href="https://github.com/hackername1">GitHub</PeLink> <br/>
 					<PeLink href="https://www.linkedin.com/in/nevolodia/">LinkedIn</PeLink> <br/>
+					<PeLink href="mailto: bolodiab3007@gmail.com">bolodiab3007@gmail.com</PeLink> <br/>
 				</PeText>
 			</div>
 
