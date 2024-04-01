@@ -14,7 +14,7 @@ const PeImage = (props: PeImageProps) => {
 	return (
 		<>
 			{props.children}
-			{!props.noSpacer && <PeSpacer/>}
+			{!props.noSpacer && <PeSpacer />}
 		</>
 	)
 };
