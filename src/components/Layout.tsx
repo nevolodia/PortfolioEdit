@@ -7,29 +7,26 @@ import "../styles/layout.css";
 const Layout = () => {
 	return (
 		<div className="layout-base">
+			<div className="menu">
+				<a className="site-title" href="/">
+					Volodia Kiril Bickov
+				</a>
+				<PeLink href="/" horizontalSize="wide">
+					My Home
+				</PeLink>
+				<PeLink href="/projects/" horizontalSize="wide">
+					My Projects
+				</PeLink>
+				<PeLink href="/resume/" horizontalSize="wide">
+					My Resume
+				</PeLink>
+				<PeLink href="/contacts/" horizontalSize="wide">
+					My Contacts
+				</PeLink>
+			</div>
 
-			<div className="page-top">
-				<div className="menu">
-					<a className="site-title" href="/">
-						Volodia Kiril Bickov
-					</a>
-					<PeLink href="/" horizontalSize="wide">
-						My Home
-					</PeLink>
-					<PeLink href="/projects/" horizontalSize="wide">
-						My Projects
-					</PeLink>
-					<PeLink href="/resume/" horizontalSize="wide">
-						My Resume
-					</PeLink>
-					<PeLink href="/contacts/" horizontalSize="wide">
-						My Contacts
-					</PeLink>
-				</div>
-
-				<div className="content">
-					<Outlet/>
-				</div>
+			<div className="content">
+				<Outlet/>
 			</div>
 
 			<Footer />
