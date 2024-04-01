@@ -8,7 +8,7 @@ interface PeImageProps {
 	srcBig?: string;
 	caption?: string;
 	alt?: string;
-	width?: string;
+	maxWidth?: string;
 	rounded?: boolean;
 	noZoom?: boolean;
 	children?: React.ReactNode;
@@ -35,7 +35,7 @@ const PeImage = (props: PeImageProps) => {
 		<img
 			className={"pe-image " + roundedClass}
 			src={props.src}
-			style={{width: props.width}}
+			style={{maxWidth: props.maxWidth}}
 			alt={props.alt}
 		/>
 	);

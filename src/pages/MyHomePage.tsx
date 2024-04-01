@@ -27,7 +27,7 @@ const MyHomePage: React.FC = () => {
 				</PeText>
 				<PeImage src={meingermanyImage}
 				         alt="meme gif"
-				         width="340px" />
+				         maxWidth="330px" />
 			</PeBlock>
 
 			<PeBlock>
