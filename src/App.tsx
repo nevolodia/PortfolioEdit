@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import "bootstrap/dist/js/bootstrap.bundle.js.map";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './styles/app.css';
 import Layout from "./components/Layout";
