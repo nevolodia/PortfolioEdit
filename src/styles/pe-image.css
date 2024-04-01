@@ -6,6 +6,18 @@
 	margin-bottom: 1.0rem;
 }
 
+.pe-image-container figure {
+	width: fit-content;
+}
+
+.pe-image-container figcaption {
+	font-size: 1rem;
+	color: var(--secondary-text-color);
+
+	text-align: center;
+	margin-top: 1px;
+}
+
 /* Image */
 
 .pe-image {

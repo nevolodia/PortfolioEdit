@@ -6,8 +6,8 @@ import "../styles/pe-image.css";
 interface PeImageProps {
 	src: string;
 	srcBig?: string;
-	caption?: string;
 	alt?: string;
+	caption?: string;
 	maxWidth?: string;
 	rounded?: boolean;
 	noZoom?: boolean;
@@ -32,12 +32,15 @@ const PeImage = (props: PeImageProps) => {
 	let roundedClass = props.rounded ? "pe-image-rounded" : "";
 
 	let imageContent = (
-		<img
-			className={"pe-image " + roundedClass}
-			src={props.src}
-			style={{maxWidth: props.maxWidth}}
-			alt={props.alt}
-		/>
+		<figure>
+			<img
+				className={"pe-image " + roundedClass}
+				src={props.src}
+				style={{maxWidth: props.maxWidth}}
+				alt={props.alt}
+			/>
+			<figcaption>{props.caption}</figcaption>
+		</figure>
 	);
 
 	return (
