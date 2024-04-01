@@ -5,13 +5,31 @@
 /* Height */
 
 .pe-spacer-small {
-	height: 1.0rem;
+	height: 0.75rem;
+}
+
+@media (min-width: 576px) {
+	.pe-spacer-small {
+		height: 1rem;
+	}
 }
 
 .pe-spacer-normal {
-	height: 2.5rem;
+	height: 1.5rem;
+}
+
+@media (min-width: 576px) {
+	.pe-spacer-normal {
+		height: 2.25rem;
+	}
 }
 
 .pe-spacer-tall {
-	height: 5.0rem;
+	height: 3.75rem;
+}
+
+@media (min-width: 576px) {
+	.pe-spacer-tall {
+		height: 5rem;
+	}
 }
