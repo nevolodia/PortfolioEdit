@@ -10,7 +10,7 @@
 	flex-direction: column-reverse;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 	.footer {
 		margin-top: 6rem;
 		padding-bottom: 3rem;
@@ -26,7 +26,7 @@
 	margin-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 	.footer-row {
 		width: calc(50% - 2rem * 1/2);
 		margin-right: 2rem;
