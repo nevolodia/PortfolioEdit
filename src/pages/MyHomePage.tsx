@@ -6,11 +6,11 @@ import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
-import happygif from "../assets/images/happy.gif";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
 import diplomaEconRiga23 from "../assets/images/diploma_econ_riga_23.jpg";
 import diplomaRu24 from "../assets/images/diploma_ru_24.jpg";
+import meingermanyImage from "../assets/images/meingermany.jpg";
 
 const MyHomePage: React.FC = () => {
 	return (
@@ -25,7 +25,9 @@ const MyHomePage: React.FC = () => {
 					From that time I have been working and felt in love with <PeWarp>Golang</PeWarp>, <PeWarp>
 					C#</PeWarp> and <PeWarp>React</PeWarp>.
 				</PeText>
-				<PeImage src={happygif} alt="meme gif" />
+				<PeImage src={meingermanyImage}
+				         alt="meme gif"
+				         width="340px" />
 			</PeBlock>
 
 			<PeBlock>
