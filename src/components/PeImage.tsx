@@ -10,6 +10,7 @@ interface PeImageProps {
 	alt?: string;
 	width?: string;
 	rounded?: boolean;
+	noZoom?: boolean;
 	children?: React.ReactNode;
 }
 
@@ -30,8 +31,18 @@ const PeImage = (props: PeImageProps) => {
 
 	let roundedClass = props.rounded ? "pe-image-rounded" : "";
 
+	let imageContent = (
+		<img
+			className={"pe-image " + roundedClass}
+			src={props.src}
+			style={{width: props.width}}
+			alt={props.alt}
+		/>
+	);
+
 	return (
 		<div className="pe-image-container">
+			{props.noZoom ? imageContent :
 			<Zoom
 				ZoomContent={({img}) => (
 					<div>
@@ -43,13 +54,9 @@ const PeImage = (props: PeImageProps) => {
 				}}
 				zoomMargin={margin}
 			>
-				<img
-					className={"pe-image " + roundedClass}
-					src={props.src}
-					style={{width: props.width}}
-					alt={props.alt}
-				/>
+				{imageContent}
 			</Zoom>
+			}
 		</div>
 	)
 };
