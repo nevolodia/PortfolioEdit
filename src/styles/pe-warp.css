@@ -1,5 +1,7 @@
 .pe-warp {
+	position: relative;
 	align-items: center;
+	z-index: 0;
 
 	background-image: radial-gradient(circle, #1c1c1c, #1a1a1a 45%, #101010);
 	border: 1px solid rgb(94, 95, 97);
@@ -21,6 +23,10 @@ p .pe-warp-text {
 .pe-warp-object {
 	display: inline-block;
 	padding: 10px;
+}
+
+.pe-warp-object p {
+	margin: 0 0.5rem 0.25rem 0.5rem;
 }
 
 .pe-warp-object .pe-image-container {
