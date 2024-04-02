@@ -53,7 +53,8 @@ const PeGallery = (props: PeGalleryProps) => {
 		let noMarginMobileClassName = noMarginMobile ? "pe-gallery-item-no-margin-mobile" : "";
 
 		return (
-			<div className={"pe-gallery-item " + noMarginClassName + " " + noMarginMobileClassName}>
+			<div className={"pe-gallery-item " + noMarginClassName + " " + noMarginMobileClassName}
+				 key={index} >
 				{children}
 			</div>
 		);
