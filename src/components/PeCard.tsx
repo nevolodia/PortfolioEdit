@@ -3,7 +3,7 @@ import PeTitle from "./PeTitle";
 
 interface PeCardProps {
 	title: string;
-	subtitle?: string;
+	tag?: string;
 	description?: string;
 	imageSrc?: string;
 	mode?: "horizontal" | "vertical";
@@ -37,7 +37,7 @@ const PeCard = (props: PeCardProps) => {
 						{props.title}
 					</PeTitle>
 					<h6 className="pe-card-subtitle">
-						{props.subtitle}
+						{props.tag}
 					</h6>
 				</div>
 				{props.description && (
