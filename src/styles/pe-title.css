@@ -44,8 +44,16 @@
 	font-weight: 300;
 }
 
-/* No bottom margin */
+/* Bottom margin */
 
 .pe-title-no-bottom-margin {
 	margin-bottom: 0;
+}
+
+.pe-title-bottom-margin-normal {
+	margin-bottom: 0.5rem;
+}
+
+.pe-title-bottom-margin-large {
+	margin-bottom: 1rem;
 }

@@ -21,7 +21,7 @@ const PeVerticalCard = (props: PeVerticalCardProps) => {
 
 			<div className="pe-card-content">
 				<div className="pe-card-content-top">
-					<PeTitle size={2} weight="normal" noBottomMargin>
+					<PeTitle size={2} weight="normal" bottomMargin="no-margin">
 						{props.title}
 					</PeTitle>
 					<h6 className="pe-card-subtitle">

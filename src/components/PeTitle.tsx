@@ -3,7 +3,7 @@ import "../styles/pe-title.css";
 interface PeTitleProps {
 	size?: 1 | 2 | 3;
 	weight?: "bold" | "normal" | "light";
-	noBottomMargin?: boolean;
+	bottomMargin?: "no-margin" | "normal" | "large";
 	children?: React.ReactNode;
 }
 
@@ -36,7 +36,19 @@ const PeTitle = (props: PeTitleProps) => {
 			break;
 	}
 
-	let marginBottomClass = props.noBottomMargin ? "pe-title-no-bottom-margin" : "";
+	let marginBottomClass = "";
+	switch (props.bottomMargin) {
+		case "no-margin":
+			marginBottomClass = "pe-title-no-bottom-margin";
+			break;
+		default:
+		case "normal":
+			marginBottomClass = "pe-title-bottom-margin-normal";
+			break;
+		case "large":
+			marginBottomClass = "pe-title-bottom-margin-large";
+			break;
+	}
 
 	return (
 		<h1 className={"pe-title " + sizeClass + " " + weightClass + " " + marginBottomClass}>
