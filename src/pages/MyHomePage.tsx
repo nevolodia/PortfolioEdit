@@ -30,9 +30,9 @@ const MyHomePage: React.FC = () => {
 
 				<PeVerticalCard title="Volodia Kiril Bickov"
 				        tag="Short"
-				        description="Future student atudent at Tu Delft.
-				        Like Golang, C#, React. Interested in AI.
-				        Working on this very project you see (more info in footer)."
+				        description="Future student at Tu Delft.
+				        I like Golang, C# and React, am interested in AI.
+				        Working on this very project you see (more info on My Projects page)."
 				        imageSrc={meandpanda}/>
 
 
