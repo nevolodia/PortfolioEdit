@@ -1,0 +1,66 @@
+.pe-card {
+	padding: 1rem 1.25rem;
+
+	border-radius: 0.5rem;
+	background-image: linear-gradient(120deg, #363636 0%, #151515 25%, #ca0173 100%);
+	border: 1px solid rgb(84, 84, 84);
+
+	margin-bottom: 1rem;
+
+	transition: border 0.15s;
+}
+
+.pe-card:hover {
+	border: 1px solid rgb(107, 107, 107);
+}
+
+.pe-card P /* Since css don't care about case, leave this easter egg here :) */ {
+	margin: 0;
+}
+
+@media (max-width: 575px) {
+	.pe-card p {
+		display: inline;
+	}
+}
+
+/* Vertical card */
+
+@media (min-width: 576px) {
+	.pe-card-vertical {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+		/* Vertical card image */
+
+.pe-card-vertical img {
+	aspect-ratio: 1 / 1;
+	width: 4.5rem;
+	height: 4.5rem;
+
+	margin-right: 1rem;
+
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+@media (max-width: 575px) {
+	.pe-card-vertical img {
+		float: left;
+	}
+}
+
+@media (max-width: 575px) {
+	.pe-card-vertical img {
+		width: calc(2rem + 6.94vw);
+		height: calc(2rem + 6.94vw);
+	}
+}
+
+		/* Vertical card content */
+
+.pe-card-content {
+	width: auto;
+}
