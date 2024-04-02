@@ -34,8 +34,7 @@ const MyHomePage: React.FC = () => {
 					        description="Student at RV1G and future student atudent at Tu Delft.
 					        Currently I am working on this very project you see (more info in footer)
 					        and want to create completely free and open-source metronome app."
-					        imageSrc={meandpanda}
-					        mode="vertical" />
+					        imageSrc={meandpanda} />
 				</PeLink>
 
 
