@@ -4,12 +4,12 @@ import 'react-medium-image-zoom/dist/styles.css';
 import "../styles/pe-image.css";
 import PeSpacer from "./PeSpacer";
 
-interface PeImageProps {
+interface PeBlockProps {
 	noSpacer?: boolean;
 	children?: React.ReactNode;
 }
 
-const PeImage = (props: PeImageProps) => {
+const PeBlock = (props: PeBlockProps) => {
 
 	return (
 		<>
@@ -19,4 +19,4 @@ const PeImage = (props: PeImageProps) => {
 	)
 };
 
-export default PeImage;
+export default PeBlock;
