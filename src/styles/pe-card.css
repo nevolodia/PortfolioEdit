@@ -1,6 +1,6 @@
 /* Card */
 
-.pe-card {
+.pe-vertical-card {
 	padding: 1rem 1.25rem;
 
 	border-radius: 0.5rem;
@@ -12,22 +12,26 @@
 	transition: border 0.15s;
 }
 
-.pe-card:hover {
+.pe-vertical-card:hover {
 	border: 1px solid rgb(107, 107, 107);
 }
 
-/* Vertical card */
-
 @media (min-width: 576px) {
-	.pe-card-vertical {
+	.pe-vertical-card {
 		display: flex;
 		flex-direction: row;
 	}
 }
 
-		/* Vertical card image */
+/* Card in link */
 
-.pe-card-vertical img {
+.pe-link .pe-vertical-card {
+
+}
+
+	/* Image */
+
+.pe-vertical-card img {
 	aspect-ratio: 1 / 1;
 	width: 4.5rem;
 	height: 4.5rem;
@@ -39,28 +43,28 @@
 }
 
 @media (max-width: 575px) {
-	.pe-card-vertical img {
+	.pe-vertical-card img {
 		float: left;
 	}
 }
 
 @media (max-width: 575px) {
-	.pe-card-vertical img {
+	.pe-vertical-card img {
 		width: calc(2rem + 6.94vw);
 		height: calc(2rem + 6.94vw);
 	}
 }
 
-		/* Vertical card content */
+/* Content */
 
-.pe-card-content {
+.pe-vertical-card-content {
 	width: auto;
 }
 
-		/* Vertical card content top */
+/* Content top */
 
 @media (min-width: 576px) {
-	.pe-card-content-top {
+	.pe-vertical-card-content-top {
 		display: flex;
 		justify-content: space-between;
 
@@ -69,7 +73,7 @@
 }
 
 @media (max-width: 575px) {
-	.pe-card-content-top {
+	.pe-vertical-card-content-top {
 		display: grid;
 		justify-items: start;
 
@@ -77,15 +81,15 @@
 	}
 }
 
-		/* Vertical card elements */
+/* Elements */
 
-.pe-card-subtitle {
+.pe-vertical-card-subtitle {
 	align-self: flex-end;
 	margin-bottom: 0.375rem;
 }
 
 @media (max-width: 575px) {
-	.pe-card-subtitle {
+	.pe-vertical-card-subtitle {
 		margin-bottom: 0.125rem;
 		padding: 0.0625rem 0.25rem;
 
@@ -95,12 +99,12 @@
 	}
 }
 
-.pe-card P.pe-card-description /* Since css don't care about case, leave this easter egg here :) */ {
+.pe-vertical-card P.pe-vertical-card-description /* Since css don't care about case, leave this easter egg here :) */ {
 	margin: 0;
 }
 
 @media (max-width: 575px) {
-	.pe-card p.pe-card-description {
+	.pe-vertical-card p.pe-vertical-card-description {
 		display: inline;
 	}
 }
