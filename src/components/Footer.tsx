@@ -1,16 +1,19 @@
 import PeText from "./PeText";
 import PeLink from "./PeLink";
 import "../styles/footer.css";
+import PeWarp from "./PeWarp";
 
 const Footer = () => {
 	return (
 		<div className="footer">
 
 			<div className="footer-row">
-				<PeText>
-					This is part of my project <PeLink href="https://github.com/hackername1/PortfolioEdit">
-					PortfolioEdit</PeLink>, which you can and are welcome to use to create your own portfolio!
-				</PeText>
+				<PeWarp>
+					<PeText>
+						This is part of my project <PeLink href="https://github.com/hackername1/PortfolioEdit">
+						PortfolioEdit</PeLink>, which you can and are welcome to use to create your own portfolio!
+					</PeText>
+				</PeWarp>
 				<PeText>
 					&copy; Volodia Kiril Bickov
 				</PeText>
