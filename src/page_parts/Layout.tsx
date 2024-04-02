@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import PeLink from "./PeLink";
+import PeLink from "../components/PeLink";
 import Footer from "./Footer";
 import "../styles/layout.css";
 
@@ -8,7 +8,7 @@ const Layout = () => {
 	return (
 		<div className="layout-base">
 			<div className="menu">
-				<a className="site-title" href="/">
+				<a className="site-title" href="/public">
 					Volodia Kiril Bickov
 				</a>
 				<PeLink href="/" horizontalSize="wide">
