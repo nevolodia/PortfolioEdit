@@ -3,6 +3,7 @@ import "../styles/pe-title.css";
 interface PeTitleProps {
 	size?: 1 | 2 | 3;
 	weight?: "bold" | "normal" | "light";
+	noBottomMargin?: boolean;
 	children?: React.ReactNode;
 }
 
@@ -35,8 +36,10 @@ const PeTitle = (props: PeTitleProps) => {
 			break;
 	}
 
+	let marginBottomClass = props.noBottomMargin ? "pe-title-no-bottom-margin" : "";
+
 	return (
-		<h1 className={"pe-title " + sizeClass + " " + weightClass}>
+		<h1 className={"pe-title " + sizeClass + " " + weightClass + " " + marginBottomClass}>
 			{props.children}
 		</h1>
 	)
