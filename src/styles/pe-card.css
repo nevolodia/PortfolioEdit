@@ -1,3 +1,5 @@
+/* Card */
+
 .pe-card {
 	padding: 1rem 1.25rem;
 
@@ -12,16 +14,6 @@
 
 .pe-card:hover {
 	border: 1px solid rgb(107, 107, 107);
-}
-
-.pe-card P /* Since css don't care about case, leave this easter egg here :) */ {
-	margin: 0;
-}
-
-@media (max-width: 575px) {
-	.pe-card p {
-		display: inline;
-	}
 }
 
 /* Vertical card */
@@ -63,4 +55,52 @@
 
 .pe-card-content {
 	width: auto;
+}
+
+		/* Vertical card content top */
+
+@media (min-width: 576px) {
+	.pe-card-content-top {
+		display: flex;
+		justify-content: space-between;
+
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media (max-width: 575px) {
+	.pe-card-content-top {
+		display: grid;
+		justify-items: start;
+
+		margin-bottom: 0.25rem;
+	}
+}
+
+		/* Vertical card elements */
+
+.pe-card-subtitle {
+	align-self: flex-end;
+	margin-bottom: 0.375rem;
+}
+
+@media (max-width: 575px) {
+	.pe-card-subtitle {
+		margin-bottom: 0.125rem;
+		padding: 0.0625rem 0.25rem;
+
+		background-color: #1a1a1a;
+		border: 1px solid #bebebe;
+		border-radius: 0.325rem;
+	}
+}
+
+.pe-card P.pe-card-description /* Since css don't care about case, leave this easter egg here :) */ {
+	margin: 0;
+}
+
+@media (max-width: 575px) {
+	.pe-card p.pe-card-description {
+		display: inline;
+	}
 }

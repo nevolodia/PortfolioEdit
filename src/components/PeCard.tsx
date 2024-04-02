@@ -1,7 +1,9 @@
 import "../styles/pe-card.css";
+import PeTitle from "./PeTitle";
 
 interface PeCardProps {
 	title: string;
+	subtitle?: string;
 	description?: string;
 	imageSrc?: string;
 	mode?: "horizontal" | "vertical";
@@ -30,9 +32,14 @@ const PeCard = (props: PeCardProps) => {
 			)}
 
 			<div className="pe-card-content">
-				<h3 className="pe-card-title">
-					{props.title}
-				</h3>
+				<div className="pe-card-content-top">
+					<PeTitle size={2} weight="normal" noBottomMargin>
+						{props.title}
+					</PeTitle>
+					<h6 className="pe-card-subtitle">
+						{props.subtitle}
+					</h6>
+				</div>
 				{props.description && (
 					<p className="pe-card-description">
 						{props.description}
