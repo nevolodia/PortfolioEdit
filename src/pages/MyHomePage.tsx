@@ -23,7 +23,7 @@ const MyHomePage: React.FC = () => {
 	return (
 		<>
 			<PeBlock>
-				<PeTitle>
+				<PeTitle bottomMargin="large">
 					Hello, world! <br/>
 					I'm Volodia Kiril Bickov!
 				</PeTitle>
@@ -31,9 +31,9 @@ const MyHomePage: React.FC = () => {
 				<PeLink noStyling href="https://github.com/hackername1/">
 					<PeCard title="Volodia Kiril Bickov"
 					        tag="Short"
-					        description="Student at RV1G and future student atudent at Tu Delft.
-					        Currently I am working on this very project you see (more info in footer)
-					        and want to create completely free and open-source metronome app."
+					        description="Future student atudent at Tu Delft.
+					        Like Golang, C#, React. Interested in AI.
+					        Working on this very project you see (more info in footer)."
 					        imageSrc={meandpanda} />
 				</PeLink>
 
