@@ -8,11 +8,16 @@ import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
 import PeCard from "../components/PeCard";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
+import diplomaEconLv23Small from "../assets/images/diploma_econ_lv_23_small.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
+import diplomaEconLv24Small from "../assets/images/diploma_econ_lv_24_small.jpg";
 import diplomaEconRiga23 from "../assets/images/diploma_econ_riga_23.jpg";
+import diplomaEconRiga23Small from "../assets/images/diploma_econ_riga_23_small.jpg";
 import diplomaRu24 from "../assets/images/diploma_ru_24.jpg";
-import meingermanyImage from "../assets/images/meingermany.jpg";
-import meandpandaImgae from "../assets/images/meandpanda.jpg";
+import diplomaRu24Small from "../assets/images/diploma_ru_24_small.jpg";
+import meingermany from "../assets/images/meingermany.jpg";
+import meingermanySmall from "../assets/images/meingermany_small.jpg";
+import meandpanda from "../assets/images/meandpanda.jpg";
 
 const MyHomePage: React.FC = () => {
 	return (
@@ -23,13 +28,13 @@ const MyHomePage: React.FC = () => {
 					I'm Volodia Kiril Bickov!
 				</PeTitle>
 
-				<PeLink noStyling href="https://binatec.eu/">
+				<PeLink noStyling href="https://github.com/hackername1/">
 					<PeCard title="Volodia Kiril Bickov"
 					        tag="Short"
 					        description="Student at RV1G and future student atudent at Tu Delft.
 					        Currently I am working on this very project you see (more info in footer)
 					        and want to create completely free and open-source metronome app."
-					        imageSrc={meandpandaImgae}
+					        imageSrc={meandpanda}
 					        mode="vertical" />
 				</PeLink>
 
@@ -39,7 +44,8 @@ const MyHomePage: React.FC = () => {
 					From that time I have been working and felt in love with <PeWarp>Golang</PeWarp>, <PeWarp>
 					C#</PeWarp> and <PeWarp>React</PeWarp>.
 				</PeText>
-				<PeImage src={meingermanyImage}
+				<PeImage src={meingermanySmall}
+				         srcBig={meingermany}
 				         alt="meme gif"
 				         caption="Me in Germany, 2022."
 				         maxWidth="330px" />
@@ -81,10 +87,18 @@ const MyHomePage: React.FC = () => {
 				</PeText>
 				<PeWarp style="bright">
 					<PeGallery columns={3}>
-						<PeImage src={diplomaEconLv24} alt="2024 year economics diploma" />
-						<PeImage src={diplomaEconRiga23} alt="2023 year economics riga diploma" />
-						<PeImage src={diplomaRu24} alt="202r year russian language diploma" />
-						<PeImage src={diplomaEconLv23} alt="2023 year economics diploma" />
+						<PeImage src={diplomaEconLv24Small}
+						         srcBig={diplomaEconLv24}
+						         alt="2024 year economics diploma" />
+						<PeImage src={diplomaEconRiga23Small}
+						         srcBig={diplomaEconRiga23}
+						         alt="2023 year economics riga diploma" />
+						<PeImage src={diplomaRu24Small}
+						         srcBig={diplomaRu24}
+						         alt="202r year russian language diploma" />
+						<PeImage src={diplomaEconLv23Small}
+						         srcBig={diplomaEconLv23}
+						         alt="2023 year economics diploma" />
 					</PeGallery>
 				</PeWarp>
 			</PeBlock>
