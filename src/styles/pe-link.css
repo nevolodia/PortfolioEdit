@@ -1,13 +1,15 @@
 .pe-link {
-	position: relative;
-
 	color: inherit;
 	text-decoration: none;
+}
+
+.pe-link-styling {
+	position: relative;
 
 	white-space: nowrap;
 }
 
-.pe-link:after {
+.pe-link-styling:after {
 	content: "";
 	position: absolute;
 	left: -2px;
@@ -22,21 +24,21 @@
 	transition: height 0.3s;
 }
 
-.pe-link:hover:after {
+.pe-link-styling:hover:after {
 	height: calc(100% + 1px);
 }
 
-.pe-link:active {
+.pe-link-styling:active {
 	height: 100%;
 }
 
-.pe-link:visited {
+.pe-link-styling:visited {
 	color: inherit;
 }
 
 /* Horizontal size */
 
-.pe-link-horizontal-size-wide:after {
+.pe-link-styling-horizontal-size-wide:after {
 	left: -4px;
 	width: calc(100% + 8px);
 }
