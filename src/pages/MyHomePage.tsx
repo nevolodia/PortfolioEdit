@@ -25,6 +25,7 @@ const MyHomePage: React.FC = () => {
 
 				<PeLink noStyling href="https://binatec.eu/">
 					<PeCard title="Volodia Kiril Bickov"
+					        subtitle="Short"
 					        description="Student at RV1G and future student atudent at Tu Delft.
 					        Currently I am working on this very project you see (more info in footer)
 					        and want to create completely free and open-source metronome app."
