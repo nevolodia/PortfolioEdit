@@ -1,16 +1,20 @@
 import "../styles/pe-card.css";
 import PeTitle from "./PeTitle";
+import PeLink from "./PeLink";
 
 interface PeVerticalCardProps {
 	title: string;
 	tag?: string;
 	description?: string;
+	linkHref?: string;
 	imageSrc?: string;
 }
 
 const PeVerticalCard = (props: PeVerticalCardProps) => {
-	return (
-		<div className="pe-vertical-card">
+	let linkClassName = props.linkHref != null ? "pe-vertical-card-link" : "";
+
+	let card = (
+		<div className={"pe-vertical-card " + linkClassName}>
 
 			{props.imageSrc && (
 				<img className="pe-vertical-card-image"
@@ -36,7 +40,17 @@ const PeVerticalCard = (props: PeVerticalCardProps) => {
 			</div>
 
 		</div>
-	)
+	);
+
+	if (props.linkHref) {
+		card = (
+			<PeLink noStyling href={props.linkHref}>
+				{card}
+			</PeLink>
+		)
+	}
+
+	return (card);
 };
 
 export default PeVerticalCard;

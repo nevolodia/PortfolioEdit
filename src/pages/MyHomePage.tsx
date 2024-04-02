@@ -6,7 +6,7 @@ import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
-import PeCard from "../components/PeVerticalCard";
+import PeVerticalCard from "../components/PeVerticalCard";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
 import diplomaEconLv23Small from "../assets/images/diploma_econ_lv_23_small.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
@@ -28,14 +28,12 @@ const MyHomePage: React.FC = () => {
 					I'm Volodia Kiril Bickov!
 				</PeTitle>
 
-				<PeLink noStyling href="https://github.com/hackername1/">
-					<PeCard title="Volodia Kiril Bickov"
-					        tag="Short"
-					        description="Future student atudent at Tu Delft.
-					        Like Golang, C#, React. Interested in AI.
-					        Working on this very project you see (more info in footer)."
-					        imageSrc={meandpanda} />
-				</PeLink>
+				<PeVerticalCard title="Volodia Kiril Bickov"
+				        tag="Short"
+				        description="Future student atudent at Tu Delft.
+				        Like Golang, C#, React. Interested in AI.
+				        Working on this very project you see (more info in footer)."
+				        imageSrc={meandpanda}/>
 
 
 				<PeText>
