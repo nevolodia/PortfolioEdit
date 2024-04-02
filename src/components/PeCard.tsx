@@ -6,23 +6,11 @@ interface PeCardProps {
 	tag?: string;
 	description?: string;
 	imageSrc?: string;
-	mode?: "horizontal" | "vertical";
 }
 
 const PeCard = (props: PeCardProps) => {
-	let modeClassName = "";
-	switch (props.mode) {
-		default:
-		case "horizontal":
-			modeClassName = "pe-card-horizontal";
-			break;
-		case "vertical":
-			modeClassName = "pe-card-vertical";
-			break;
-	}
-
 	return (
-		<div className={"pe-card " + modeClassName}>
+		<div className="pe-card pe-card-vertical">
 
 			{props.imageSrc && (
 				<img className="pe-card-image"
