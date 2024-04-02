@@ -6,7 +6,7 @@ import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
-import PeCard from "../components/PeCard";
+import PeCard from "../components/PeVerticalCard";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
 import diplomaEconLv23Small from "../assets/images/diploma_econ_lv_23_small.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";

@@ -1,14 +1,14 @@
 import "../styles/pe-card.css";
 import PeTitle from "./PeTitle";
 
-interface PeCardProps {
+interface PeVerticalCardProps {
 	title: string;
 	tag?: string;
 	description?: string;
 	imageSrc?: string;
 }
 
-const PeCard = (props: PeCardProps) => {
+const PeVerticalCard = (props: PeVerticalCardProps) => {
 	return (
 		<div className="pe-card pe-card-vertical">
 
@@ -39,4 +39,4 @@ const PeCard = (props: PeCardProps) => {
 	)
 };
 
-export default PeCard;
+export default PeVerticalCard;
