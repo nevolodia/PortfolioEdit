@@ -6,11 +6,13 @@ import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
+import PeCard from "../components/PeCard";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
 import diplomaEconRiga23 from "../assets/images/diploma_econ_riga_23.jpg";
 import diplomaRu24 from "../assets/images/diploma_ru_24.jpg";
 import meingermanyImage from "../assets/images/meingermany.jpg";
+import meandpandaImgae from "../assets/images/meandpanda.jpg";
 
 const MyHomePage: React.FC = () => {
 	return (
@@ -20,6 +22,17 @@ const MyHomePage: React.FC = () => {
 					Hello, world! <br/>
 					I'm Volodia Kiril Bickov!
 				</PeTitle>
+
+				<PeLink noStyling href="https://binatec.eu/">
+					<PeCard title="Volodia Kiril Bickov"
+					        description="Student at RV1G and future student atudent at Tu Delft.
+					        Currently I am working on this very project you see (more info in footer)
+					        and want to create completely free and open-source metronome app."
+					        imageSrc={meandpandaImgae}
+					        mode="vertical" />
+				</PeLink>
+
+
 				<PeText>
 					Since early childhood I have been interested in computer science.
 					From that time I have been working and felt in love with <PeWarp>Golang</PeWarp>, <PeWarp>
