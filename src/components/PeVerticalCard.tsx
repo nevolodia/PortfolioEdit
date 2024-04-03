@@ -1,4 +1,4 @@
-import "../styles/pe-card.css";
+import "../styles/pe-vertical-card.css";
 import PeTitle from "./PeTitle";
 import PeLink from "./PeLink";
 
