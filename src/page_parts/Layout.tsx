@@ -8,7 +8,7 @@ const Layout = () => {
 	return (
 		<div className="layout-base">
 			<div className="menu">
-				<a className="site-title" href="/public">
+				<a className="site-title" href="/">
 					Volodia Kiril Bickov
 				</a>
 				<PeLink href="/" horizontalSize="wide">
