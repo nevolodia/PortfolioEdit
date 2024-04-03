@@ -10,17 +10,17 @@ interface PeLinkProps {
 const PeLink = (props: PeLinkProps) => {
 	let linkClass = props.noStyling ? "" : "pe-link-styling ";
 
-	let horizontalSizeClass = "";
+	let horizontalSizeClassName = "";
 	if (!props.noStyling) {
 		switch (props.horizontalSize) {
 			case "wide":
-				horizontalSizeClass = "pe-link-horizontal-size-wide";
+				horizontalSizeClassName = "pe-link-horizontal-size-wide";
 				break;
 		}
 	}
 
 	return (
-		<a className={"pe-link " + linkClass + horizontalSizeClass}
+		<a className={"pe-link " + linkClass + horizontalSizeClassName}
 		   href={props.href}
 		>
 			{props.children}
