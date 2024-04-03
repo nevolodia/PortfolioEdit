@@ -1,8 +1,9 @@
 import "../styles/pe-warp.css";
 
 interface PeTextProps {
-	horizontalSize?: "wide" | "normal";
-	style?: "normal" | "bright";
+	backgroundColor?: "normal" | "light";
+	textHorizontalSize?: "wide" | "normal";
+	objectPadding?: "small" | "normal";
 	children?: React.ReactNode;
 }
 
@@ -17,22 +18,41 @@ const PeWarp = (props: PeTextProps) => {
 			break;
 	}
 
-	let paddingClass = "";
-	switch (props.horizontalSize) {
+	let textHorizontalSizeClassName = "";
+	switch (props.textHorizontalSize) {
+		default:
+		case "normal":
+			textHorizontalSizeClassName = "pe-warp-horizontal-size-normal";
+			break;
 		case "wide":
-			paddingClass = "pe-warp-horizontal-size-wide";
+			textHorizontalSizeClassName = "pe-warp-horizontal-size-wide";
 			break;
 	}
 
 	let colorClass = "";
-	switch (props.style) {
-		case "bright":
-			colorClass = "pe-warp-color-bright";
+	switch (props.backgroundColor) {
+		default:
+		case "normal":
+			colorClass = "pe-warp-background-color-normal";
+			break;
+		case "light":
+			colorClass = "pe-warp-background-color-light";
+			break;
+	}
+
+	let objectPaddingClassName = "";
+	switch (props.objectPadding) {
+		case "small":
+			objectPaddingClassName = "pe-warp-object-padding-small";
+			break;
+		default:
+		case "normal":
+			objectPaddingClassName = "pe-warp-object-padding-normal";
 			break;
 	}
 
 	return (
-		<span className={"pe-warp " + warpClass + " " + paddingClass + " " + colorClass}>
+		<span className={"pe-warp " + warpClass + " " + textHorizontalSizeClassName + " " + colorClass + " " + objectPaddingClassName}>
 			{props.children}
 		</span>
 	)
