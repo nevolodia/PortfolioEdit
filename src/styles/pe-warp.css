@@ -20,7 +20,7 @@ p .pe-warp-text {
 }
 
 .pe-warp-object {
-	display: inline-block;
+	display: table;
 	padding: 10px;
 	margin-bottom: 1rem;
 }
