@@ -1,0 +1,9 @@
+:root {
+  --pe-logo-height: 2.75rem;
+}
+
+@media (max-width: 576px) {
+	:root {
+		--pe-logo-height: 2.25rem;
+	}
+}
