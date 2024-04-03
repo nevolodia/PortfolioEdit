@@ -82,7 +82,7 @@ const MyHomePage: React.FC = () => {
 					2023 and 2024.
 					Furthermore, I have won several other awards, all of which are shown below.
 				</PeText>
-				<PeWarp style="bright">
+				<PeWarp backgroundColor="light">
 					<PeGallery columns={3}>
 						<PeImage src={diplomaEconLv24Small}
 						         srcBig={diplomaEconLv24}
