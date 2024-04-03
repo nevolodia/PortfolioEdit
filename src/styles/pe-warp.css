@@ -1,3 +1,7 @@
+:root {
+	--pe-warp-margin-bottom: 1rem;
+}
+
 .pe-warp {
 	position: relative;
 	align-items: center;
@@ -22,7 +26,11 @@ p .pe-warp-text {
 .pe-warp-object {
 	display: table;
 	padding: 10px;
-	margin-bottom: 1rem;
+	margin-bottom: var(--pe-warp-margin-bottom);
+}
+
+a .pe-warp-object {
+	margin-bottom: 0 !important;
 }
 
 .pe-warp-object p {
