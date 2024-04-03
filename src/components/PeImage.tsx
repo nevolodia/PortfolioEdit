@@ -45,7 +45,7 @@ const PeImage = (props: PeImageProps) => {
 	return (
 		<div
 			className="pe-image-container"
-			style={{maxWidth: "min(100%, " + props.maxWidth + ")"}}
+			style={{maxWidth: "min(calc(100vw - 2*var(--padding-y)), " + props.maxWidth + ")"}}
 		>
 			{props.noZoom ? imageContent :
 				<Zoom
