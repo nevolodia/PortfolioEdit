@@ -1,5 +1,7 @@
 .pe-inline {
 	display: inline-block;
+
+	margin-bottom: 1rem;
 }
 
 /* children spacing */
