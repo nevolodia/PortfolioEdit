@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf4464b5.css",
-    "main.js": "/static/js/main.af95fa31.js",
+    "main.css": "/static/css/main.c460d99b.css",
+    "main.js": "/static/js/main.20967f65.js",
     "static/media/404-big.gif": "/static/media/404-big.142a0dc56d4bbec5f673.gif",
     "static/media/hackerman.gif": "/static/media/hackerman.67886207464d5ef037f2.gif",
     "static/media/404.gif": "/static/media/404.86e16d00bb9b39d7874f.gif",
@@ -16,13 +16,15 @@
     "static/media/diploma_ru_24_small.jpg": "/static/media/diploma_ru_24_small.1f7e73cb1891421d658d.jpg",
     "static/media/diploma_econ_lv_23_small.jpg": "/static/media/diploma_econ_lv_23_small.ee0a192b47f9b1b89bd8.jpg",
     "static/media/diploma_econ_lv_24_small.jpg": "/static/media/diploma_econ_lv_24_small.d76f8fd3c9bc0252f01a.jpg",
+    "static/media/github-logo.png": "/static/media/github-logo.e2d199384bce2429dee9.png",
+    "static/media/linkedin-logo.png": "/static/media/linkedin-logo.891734834ba8cd383c5f.png",
     "static/media/meandpanda.jpg": "/static/media/meandpanda.4d9b2d4f41917f55a1d9.jpg",
     "index.html": "/index.html",
-    "main.bf4464b5.css.map": "/static/css/main.bf4464b5.css.map",
-    "main.af95fa31.js.map": "/static/js/main.af95fa31.js.map"
+    "main.c460d99b.css.map": "/static/css/main.c460d99b.css.map",
+    "main.20967f65.js.map": "/static/js/main.20967f65.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf4464b5.css",
-    "static/js/main.af95fa31.js"
+    "static/css/main.c460d99b.css",
+    "static/js/main.20967f65.js"
   ]
 }
