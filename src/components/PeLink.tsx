@@ -19,8 +19,10 @@ const PeLink = (props: PeLinkProps) => {
 		}
 	}
 
+	let objectClassName = typeof props.children === "object" ? "pe-link-object" : "";
+
 	return (
-		<a className={"pe-link " + linkClass + horizontalSizeClassName}
+		<a className={"pe-link " + linkClass + " " + horizontalSizeClassName + " " + objectClassName}
 		   href={props.href}
 		>
 			{props.children}

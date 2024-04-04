@@ -36,6 +36,12 @@
 	color: inherit;
 }
 
+/* Inside is object */
+
+.pe-link-object {
+	display: inline-block;
+}
+
 /* Horizontal size */
 
 .pe-link-styling-horizontal-size-wide:after {
