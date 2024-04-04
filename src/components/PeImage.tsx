@@ -9,6 +9,7 @@ interface PeImageProps {
 	alt?: string;
 	caption?: string;
 	maxWidth?: string;
+	maxHeight?: string;
 	rounded?: boolean;
 	noZoom?: boolean;
 	children?: React.ReactNode;
@@ -16,6 +17,15 @@ interface PeImageProps {
 
 const PeImage = (props: PeImageProps) => {
 	const [margin, setMargin] = React.useState(0);
+	const [aspectRatio, setAspectRatio] = React.useState<number | undefined>(undefined);
+
+	// Calculate aspect ratio function
+	const img = new Image();
+	img.src = props.src;
+	img.onload = () => {
+		const ratio = img.width / img.height;
+		setAspectRatio(ratio);
+	};
 
 	// Change on screen resize
 	React.useEffect(() => {
@@ -45,7 +55,12 @@ const PeImage = (props: PeImageProps) => {
 	return (
 		<div
 			className="pe-image-container"
-			style={{maxWidth: "min(calc(100vw - 2*var(--padding-y)), " + props.maxWidth + ")"}}
+			style={{
+				maxWidth: props.maxWidth ? "min(calc(100vw - 2*var(--padding-y)), " + props.maxWidth + ")" :
+					"auto",
+				maxHeight: props.maxHeight ? props.maxHeight : "auto",
+				aspectRatio: aspectRatio !== undefined ? aspectRatio : 'auto',
+		}}
 		>
 			{props.noZoom ? imageContent :
 				<Zoom
