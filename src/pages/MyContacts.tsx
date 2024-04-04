@@ -5,8 +5,10 @@ import PeWarp from "../components/PeWarp";
 import PeLink from "../components/PeLink";
 import PeText from "../components/PeText";
 import PeVideo from "../components/PeVideo";
-import githublogo from "../assets/images/github-logo.png";
 import PeLogo from "../components/PeLogo";
+import PeInline from "../components/PeInline";
+import githublogo from "../assets/images/github-logo.png";
+import linkedinlogo from "../assets/images/linkedin-logo.png";
 
 const MyContactsPage: React.FC = () => {
 	return (
@@ -26,9 +28,16 @@ const MyContactsPage: React.FC = () => {
 				</PeText>
 			</PeWarp>
 
-			<PeLogo imageSrc={githublogo}
-			        alt="GitHub logo"
-			        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+			<PeInline>
+				<PeLogo imageSrc={githublogo}
+				        alt="GitHub logo"
+				        href="https://github.com/hackername1" />
+				<PeLogo imageSrc={linkedinlogo}
+				        alt="Linkedin logo"
+				        href="https://www.linkedin.com/in/nevolodia/" />
+			</PeInline>
+
+			<PeSpacer height="small" />
 
 			<PeVideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 			         provider="youtube" />
