@@ -1,0 +1,9 @@
+.pe-inline {
+	display: inline-block;
+}
+
+/* children spacing */
+
+.pe-inline > *:not(:last-child) {
+	margin-right: 0.75rem;
+}
