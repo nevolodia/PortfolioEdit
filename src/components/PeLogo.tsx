@@ -1,8 +1,6 @@
 import React from "react";
-import PeWarp from "./PeWarp";
 import PeImage from "./PeImage";
 import PeLink from "./PeLink";
-import PeSpacer from "./PeSpacer";
 import "../styles/pe_logo.css";
 
 interface PeLogoProps {
@@ -13,12 +11,10 @@ interface PeLogoProps {
 
 const PeLogo = (props: PeLogoProps) => {
 	let element = (
-		<PeWarp objectPadding="small">
-			<PeImage src={props.imageSrc}
-			         alt={props.alt}
-			         maxWidth="var(--pe-logo-height)"
-			         noZoom />
-		</PeWarp>
+		<PeImage src={props.imageSrc}
+		         alt={props.alt}
+		         maxHeight="var(--pe-logo-height)"
+		         noZoom />
 	);
 
 	if (props.href) {
@@ -31,10 +27,9 @@ const PeLogo = (props: PeLogoProps) => {
 	}
 
 	return (
-		<>
+		<div className="pe-logo">
 			{element}
-			<PeSpacer height="small" />
-		</>
+		</div>
 	);
 };
 
