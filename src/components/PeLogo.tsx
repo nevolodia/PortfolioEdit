@@ -1,7 +1,7 @@
+import "../styles/pe_logo.css";
 import React from "react";
 import PeImage from "./PeImage";
 import PeLink from "./PeLink";
-import "../styles/pe_logo.css";
 
 interface PeLogoProps {
 	imageSrc: string;

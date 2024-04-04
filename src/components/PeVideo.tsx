@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import Plyr, {APITypes} from "plyr-react";
-import "plyr-react/plyr.css"
+import "plyr-react/plyr.css";
 
 interface PeVideoProps {
 	src: string;

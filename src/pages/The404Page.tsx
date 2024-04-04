@@ -1,10 +1,10 @@
 import React from "react";
+import PeWarp from "../components/PeWarp";
 import PeTitle from "../components/PeTitle";
 import PeImage from "../components/PeImage";
+import PeSpacer from "../components/PeSpacer";
 import the404gif from "../assets/images/404.gif";
 import the404gif_big from "../assets/images/404-big.gif";
-import PeWarp from "../components/PeWarp";
-import PeSpacer from "../components/PeSpacer";
 
 const The404Page: React.FC = () => {
 	return (

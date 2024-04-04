@@ -1,4 +1,5 @@
 import "../styles/pe-link.css";
+import React from "react";
 
 interface PeLinkProps {
 	href: string;

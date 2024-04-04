@@ -1,4 +1,5 @@
 import "../styles/pe-title.css";
+import React from "react";
 
 interface PeTitleProps {
 	size?: 1 | 2 | 3;

@@ -1,5 +1,5 @@
-import React from "react";
 import "../styles/pe-gallery.css";
+import React from "react";
 
 interface PeGalleryProps {
 	columns?: 2 | 3;

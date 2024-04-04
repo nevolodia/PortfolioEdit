@@ -1,6 +1,6 @@
+import "../styles/footer.css";
 import PeText from "../components/PeText";
 import PeLink from "../components/PeLink";
-import "../styles/footer.css";
 import PeWarp from "../components/PeWarp";
 
 const Footer = () => {

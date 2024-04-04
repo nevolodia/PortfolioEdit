@@ -1,4 +1,5 @@
 import "../styles/pe-text.css";
+import React from "react";
 
 interface PeTextProps {
 	weight?: "bold" | "normal" | "light";

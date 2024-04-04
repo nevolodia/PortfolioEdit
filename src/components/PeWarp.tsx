@@ -1,4 +1,5 @@
 import "../styles/pe-warp.css";
+import React from "react";
 
 interface PeTextProps {
 	backgroundColor?: "normal" | "light";

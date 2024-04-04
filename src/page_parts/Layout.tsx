@@ -1,8 +1,8 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import PeLink from "../components/PeLink";
-import Footer from "./Footer";
 import "../styles/layout.css";
+import React from "react";
+import {Outlet} from "react-router-dom";
+import Footer from "./Footer";
+import PeLink from "../components/PeLink";
 
 const Layout = () => {
 	return (
