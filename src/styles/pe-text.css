@@ -1,6 +1,7 @@
 /* Text */
 
 .pe-text {
+	overflow-wrap: anywhere;
 	line-height: 1.80;
 }
 
