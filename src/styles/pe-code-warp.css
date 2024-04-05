@@ -1,0 +1,11 @@
+.pe-code-warp {
+	padding: 1px 5px;
+
+	font-size: 0.975rem !important;
+	white-space: nowrap;
+
+	font-weight: 500;
+
+	background-color: #3a3a3a;
+	border-radius: 3px;
+}
