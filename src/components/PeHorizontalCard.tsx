@@ -12,12 +12,17 @@ interface PeHorizontalCardProps {
 }
 
 const PeHorizontalCard = (props: PeHorizontalCardProps) => {
-	let linkClassName = props.linkHref != null ? "pe-horizontal-card-link" : "";
+	let linkClassName = props.linkHref != null ? "link pe-horizontal-card-link" : "";
 	let isImageClass = props.imageSrc != null ? "pe-horizontal-card-image" : "";
 
 	let card = (
 		<div className={"pe-horizontal-card " + linkClassName}
 		     style={{maxWidth: props.maxWidth? props.maxWidth : "100%"}}
+		     onClick={(e) => {
+			     if (props.linkHref) {
+				     window.open(props.linkHref, "_blank");
+			     }
+		     }}
 		>
 			{props.imageSrc && (
 				<img className="pe-horizontal-card-image"
@@ -44,14 +49,6 @@ const PeHorizontalCard = (props: PeHorizontalCardProps) => {
 
 		</div>
 	);
-
-	if (props.linkHref) {
-		card = (
-			<PeLink noStyling href={props.linkHref}>
-				{card}
-			</PeLink>
-		)
-	}
 
 	return (card);
 };

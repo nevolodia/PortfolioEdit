@@ -12,11 +12,16 @@ interface PeVerticalCardProps {
 }
 
 const PeVerticalCard = (props: PeVerticalCardProps) => {
-	let linkClassName = props.linkHref != null ? "pe-vertical-card-link" : "";
+	let linkClassName = props.linkHref != null ? "link pe-vertical-card-link" : "";
 
 	let card = (
 		<div className={"pe-vertical-card " + linkClassName}
 		     style={{maxWidth: props.maxWidth? props.maxWidth : "100%"}}
+		     onClick={(e) => {
+				 			     if (props.linkHref) {
+				     window.open(props.linkHref, "_blank");
+			     }
+		     }}
 		>
 
 			{props.imageSrc && (
@@ -44,14 +49,6 @@ const PeVerticalCard = (props: PeVerticalCardProps) => {
 
 		</div>
 	);
-
-	if (props.linkHref) {
-		card = (
-			<PeLink noStyling href={props.linkHref}>
-				{card}
-			</PeLink>
-		)
-	}
 
 	return (card);
 };

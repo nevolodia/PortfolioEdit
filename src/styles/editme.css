@@ -17,6 +17,6 @@
 
 /* Change specific styles */
 
-button, a {
+button, a, .link {
 	cursor: crosshair !important;
 }
