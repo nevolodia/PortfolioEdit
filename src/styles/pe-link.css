@@ -39,7 +39,7 @@
 /* Inside is object */
 
 .pe-link-object {
-	display: inline-block;
+	display: block;
 }
 
 /* Horizontal size */
