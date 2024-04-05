@@ -8,13 +8,16 @@ interface PeVerticalCardProps {
 	description?: string;
 	linkHref?: string;
 	imageSrc?: string;
+	maxWidth?: string;
 }
 
 const PeVerticalCard = (props: PeVerticalCardProps) => {
 	let linkClassName = props.linkHref != null ? "pe-vertical-card-link" : "";
 
 	let card = (
-		<div className={"pe-vertical-card " + linkClassName}>
+		<div className={"pe-vertical-card " + linkClassName}
+		     style={{maxWidth: props.maxWidth? props.maxWidth : "100%"}}
+		>
 
 			{props.imageSrc && (
 				<img className="pe-vertical-card-image"
