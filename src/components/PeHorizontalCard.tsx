@@ -8,6 +8,7 @@ interface PeHorizontalCardProps {
 	description?: string;
 	linkHref?: string;
 	imageSrc?: string;
+	maxWidth?: string;
 }
 
 const PeHorizontalCard = (props: PeHorizontalCardProps) => {
@@ -15,8 +16,9 @@ const PeHorizontalCard = (props: PeHorizontalCardProps) => {
 	let isImageClass = props.imageSrc != null ? "pe-horizontal-card-image" : "";
 
 	let card = (
-		<div className={"pe-horizontal-card " + linkClassName}>
-
+		<div className={"pe-horizontal-card " + linkClassName}
+		     style={{maxWidth: props.maxWidth? props.maxWidth : "100%"}}
+		>
 			{props.imageSrc && (
 				<img className="pe-horizontal-card-image"
 				     src={props.imageSrc}
