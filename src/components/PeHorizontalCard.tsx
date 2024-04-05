@@ -12,6 +12,7 @@ interface PeHorizontalCardProps {
 
 const PeHorizontalCard = (props: PeHorizontalCardProps) => {
 	let linkClassName = props.linkHref != null ? "pe-horizontal-card-link" : "";
+	let isImageClass = props.imageSrc != null ? "pe-horizontal-card-image" : "";
 
 	let card = (
 		<div className={"pe-horizontal-card " + linkClassName}>
@@ -23,7 +24,7 @@ const PeHorizontalCard = (props: PeHorizontalCardProps) => {
 				/>
 			)}
 
-			<div className="pe-horizontal-card-content">
+			<div className={"pe-horizontal-card-content " + isImageClass}>
 				<div className="pe-horizontal-card-content-top">
 					<PeTitle size={2} weight="normal" bottomMargin="no-margin">
 						{props.title}
