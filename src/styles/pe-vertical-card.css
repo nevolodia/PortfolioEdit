@@ -84,22 +84,12 @@
 
 /* Content top */
 
-@media (min-width: 576px) {
-	.pe-vertical-card-content-top {
-		display: flex;
-		justify-content: space-between;
+.pe-vertical-card-content-top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-		margin-bottom: 0.5rem;
-	}
-}
-
-@media (max-width: 575px) {
-	.pe-vertical-card-content-top {
-		display: grid;
-		justify-items: start;
-
-		margin-bottom: 0.25rem;
-	}
+	margin-bottom: 0.5rem;
 }
 
 /* Elements */
@@ -107,17 +97,6 @@
 .pe-vertical-card-subtitle {
 	align-self: flex-end;
 	margin-bottom: 0.375rem;
-}
-
-@media (max-width: 575px) {
-	.pe-vertical-card-subtitle {
-		margin-bottom: 0.125rem;
-		padding: 0.0625rem 0.25rem;
-
-		background-color: #1a1a1a;
-		border: 1px solid #bebebe;
-		border-radius: 0.325rem;
-	}
 }
 
 .pe-vertical-card P.pe-vertical-card-description /* Since css don't care about case, leave this easter egg here :) */ {
