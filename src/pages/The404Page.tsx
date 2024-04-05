@@ -1,5 +1,6 @@
 import React from "react";
 import PeWarp from "../components/PeWarp";
+import PeCode from "../components/PeCode";
 import PeTitle from "../components/PeTitle";
 import PeImage from "../components/PeImage";
 import PeSpacer from "../components/PeSpacer";
@@ -15,6 +16,12 @@ const The404Page: React.FC = () => {
 			</PeTitle>
 
 			<PeSpacer height="small" />
+
+
+			<PeCode>
+{`print("Hello, World!")`}
+			</PeCode>
+
 
 			<PeImage src={the404gif}
 			         srcBig={the404gif_big}
