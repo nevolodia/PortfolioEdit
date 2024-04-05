@@ -2,11 +2,13 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-
-	margin-bottom: 1rem;
 }
 
-/* children spacing */
+.pe-inline-same-width * {
+	flex-basis: 100%;
+}
+
+	/* children spacing */
 
 .pe-inline > *:not(:last-child) {
 	margin-right: 0.75rem;
