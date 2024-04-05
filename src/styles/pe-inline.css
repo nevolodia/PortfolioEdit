@@ -1,5 +1,7 @@
 .pe-inline {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 
 	margin-bottom: 1rem;
 }
