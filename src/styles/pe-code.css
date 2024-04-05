@@ -4,7 +4,7 @@
 /* Main container */
 
 .pe-code {
-	padding: 0 1.25rem 0.875rem 1.25rem;
+	padding: 0.875rem 1.25rem 0.875rem 1.25rem;
 	margin-bottom: 1rem;
 
 	border-radius: .25rem;
@@ -19,4 +19,18 @@
 .pe-code pre {
 	margin: 0;
 	overflow: hidden;
+}
+
+.pe-code pre p {
+	margin-bottom: 0;
+}
+
+/* Simplebar style override */
+
+.pe-code .simplebar-content::before, .simplebar-content::after {
+	display: none !important;
+}
+
+.simplebar-scrollable-x .simplebar-content::after {
+	display: table !important;
 }
