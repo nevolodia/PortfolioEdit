@@ -6,6 +6,7 @@ import PeInline from "../components/PeInline";
 import githublogo from "../assets/images/github-logo.png";
 import linkedinlogo from "../assets/images/linkedin-logo.png";
 import emailicon from "../assets/images/email-icon.png";
+import PeSpacer from "../components/PeSpacer";
 
 const MyContactsPage: React.FC = () => {
 	return (
@@ -25,6 +26,8 @@ const MyContactsPage: React.FC = () => {
 				        alt="Email me"
 				        href="mailto:%20bolodiab3007@gmail.com" />
 			</PeInline>
+
+			<PeSpacer height="small" />
 
 			<PeVideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 			         provider="youtube" />
