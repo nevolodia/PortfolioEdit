@@ -34,5 +34,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           source: ./build
           target: /var/www/nevolodia.com/html/
+          SCRIPT_BEFORE: ls
           SCRIPT_AFTER: |
             sudo systemctl restart nginx
