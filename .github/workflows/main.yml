@@ -29,11 +29,11 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2
         with:
-          server_ip: ${{ secrets.SERVER_IP }}
-          server_username: ${{ secrets.SERVER_USERNAME }}
-          server_key: ${{ secrets.KEY }}
-          local_path: ./build
-          remote_path: /path/to/deploy
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.KEY }}
+          source: ./build
+          target: var/www/nevolodia.com/html/
       
       - name: Restart nginx
         uses: appleboy/ssh-action@master
