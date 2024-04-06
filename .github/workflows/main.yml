@@ -29,8 +29,8 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2
         with:
-          REMOTE_HOST: ${{ secrets.SERVER_IP }}
-          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           source: ./build
           target: var/www/nevolodia.com/html/
