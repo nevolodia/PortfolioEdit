@@ -29,9 +29,9 @@ jobs:
       - name: Deploy to DigitalOcean Droplet
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }} # IP address of your Droplet
-          username: ${{ secrets.USERNAME }} # Username to SSH into the Droplet
-          key: ${{ secrets.KEY }} # SSH private key to authenticate
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
           script: |
             scp -r ./build/* ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/nevolodia.com/html/
             ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'sudo systemctl restart nginx'
