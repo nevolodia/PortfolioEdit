@@ -14,7 +14,7 @@ const MyProjectsPage: React.FC = () => {
 				More projects to come!
 			</PeTitle>
 
-			<PeInline sameWidth >
+			<PeInline sameWidth noWarp>
 
 				<PeHorizontalCard title="PortfolioEdit"
 				                  tag="In development"
