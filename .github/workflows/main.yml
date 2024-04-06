@@ -33,6 +33,6 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           source: ./build
-          target: var/www/nevolodia.com/html/
+          target: /var/www/nevolodia.com/html/
           SCRIPT_AFTER: |
             sudo systemctl restart nginx
