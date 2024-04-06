@@ -5,12 +5,16 @@
 
 	gap: .75rem;
 	row-gap: .5rem;
+
+	margin-bottom: 1rem;
 }
 
 /* Children width */
 
 .pe-inline-same-width * {
 	flex-basis: 100%;
+
+	margin-bottom: 0 !important;
 }
 
 /* No wrap */
