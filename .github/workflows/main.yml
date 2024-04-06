@@ -29,11 +29,12 @@ jobs:
       - name: Deploy to DigitalOcean Droplet
         uses: appleboy/ssh-action@master
         with:
-          host: ${{secrets.HOST}}
-          username: ${{secrets.USERNAME}}
-          key: ${{secrets.KEY}}
-          local_path: ./build
-          remote_path: /var/www/nevolodia.com/html/
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
           script: |
-            sudo systemctl restart nginx
+            # Copy the build directory to the remote server
+            scp -r ./build/* ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/nevolodia.com/html/
 
+            # Restart nginx on the remote server
+            ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} -p ${{ secrets.PORT }} 'sudo systemctl restart nginx'
