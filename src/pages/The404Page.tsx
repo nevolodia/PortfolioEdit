@@ -12,7 +12,10 @@ const The404Page: React.FC = () => {
 		<>
 			<PeTitle>
 				Not found here... <br />
-				Maybe in another <PeWarp textHorizontalSize="wide">Multiverse</PeWarp> ?
+				Maybe in another
+					<PeWarp textHorizontalSize="wide">
+						Multiverse
+					</PeWarp> ?
 			</PeTitle>
 
 			<PeSpacer height="small" />
