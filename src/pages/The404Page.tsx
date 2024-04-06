@@ -17,11 +17,9 @@ const The404Page: React.FC = () => {
 
 			<PeSpacer height="small" />
 
-
 			<PeCode>
-{`print("Hello, World!")`}
+				{`print("Error 404: Page not found")`}
 			</PeCode>
-
 
 			<PeImage src={the404gif}
 			         srcBig={the404gif_big}

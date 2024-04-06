@@ -4,13 +4,20 @@
 	flex-wrap: wrap;
 	row-gap: .5rem;
 }
+/* children spacing */
+
+.pe-inline > *:not(:last-child) {
+	margin-right: 0.75rem;
+}
+
+/* Children width */
 
 .pe-inline-same-width * {
 	flex-basis: 100%;
 }
 
-/* children spacing */
+/* No wrap */
 
-.pe-inline > *:not(:last-child) {
-	margin-right: 0.75rem;
+.pe-inline-no-warp {
+	flex-wrap: nowrap !important;
 }

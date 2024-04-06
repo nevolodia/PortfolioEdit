@@ -12,7 +12,6 @@ interface PeImageProps {
 	maxHeight?: string;
 	rounded?: boolean;
 	noZoom?: boolean;
-	children?: React.ReactNode;
 }
 
 const PeImage = (props: PeImageProps) => {
