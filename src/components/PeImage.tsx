@@ -19,9 +19,13 @@ const PeImage = (props: PeImageProps) => {
 	const [margin, setMargin] = React.useState(0);
 	const [aspectRatio, setAspectRatio] = React.useState<number | undefined>(undefined);
 
-	// Calculate aspect ratio function
+	// Declaring the images for preloading
 	const img = new Image();
 	img.src = props.src;
+	const imgBig = new Image();
+	imgBig.src = props.srcBig ? props.srcBig : props.src;
+
+	// Calculate aspect ratio function
 	img.onload = () => {
 		const ratio = img.width / img.height;
 		setAspectRatio(ratio);
