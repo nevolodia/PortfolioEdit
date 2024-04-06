@@ -37,4 +37,4 @@ jobs:
             scp -r ./build/* ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/nevolodia.com/html/
 
             # Restart nginx on the remote server
-            ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} -p ${{ secrets.PORT }} 'sudo systemctl restart nginx'
+            ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'sudo systemctl restart nginx'
