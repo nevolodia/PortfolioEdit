@@ -8,18 +8,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install project dependencies
+        run: npm install
+
+      - name: Build React App
+        run: npm run build
+      
       - name: Deploy to DigitalOcean Droplet
         uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.HOST}}
           username: ${{secrets.USERNAME}}
           key: ${{secrets.KEY}}
+          local_path: ./build
+          remote_path: /var/www/nevolodia.com/html/
           script: |
-            # Update repository
-            cd ~/repositories/PortfolioEdit
-            git pull origin master
-            
-            # Copy build (should be built in advance)
-            # to web server and restart nginx
-            cp -r build/* /var/www/nevolodia.com/html/
             sudo systemctl restart nginx
+
