@@ -26,6 +26,16 @@ jobs:
       - name: Build React App
         run: npm run build
 
+      - name: Deploy to DigitalOcean Droplet
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} # IP address of your Droplet
+          username: ${{ secrets.USERNAME }} # Username to SSH into the Droplet
+          key: ${{ secrets.KEY }} # SSH private key to authenticate
+          script: |
+            scp -r ./build/* ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/nevolodia.com/html/
+            ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'sudo systemctl restart nginx'
+
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         with:
