@@ -33,8 +33,10 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            scp -r ./build/* ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/nevolodia.com/html/
-            ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'sudo systemctl restart nginx'
+            cd /var/www/nevolodia.com/html/
+            rm -rf *
+            scp -r $GITHUB_WORKSPACE/build/*
+            sudo systemctl restart nginx
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
