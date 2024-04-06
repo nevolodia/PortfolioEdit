@@ -27,6 +27,8 @@
 
 .pe-horizontal-card-image {
 	padding-top: .75rem !important;
+
+	border-radius: 0.5rem 0.5rem 0 0;
 }
 
 /* Content top */
