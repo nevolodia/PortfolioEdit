@@ -2,11 +2,12 @@ import React from "react";
 import PeLogo from "../components/PeLogo";
 import PeTitle from "../components/PeTitle";
 import PeVideo from "../components/PeVideo";
+import PeSpacer from "../components/PeSpacer";
 import PeInline from "../components/PeInline";
 import githublogo from "../assets/images/github-logo.png";
 import linkedinlogo from "../assets/images/linkedin-logo.png";
 import emailicon from "../assets/images/email-icon.png";
-import PeSpacer from "../components/PeSpacer";
+import buymeacoffee from "../assets/images/buymeacoffe.png";
 
 const MyContactsPage: React.FC = () => {
 	return (
@@ -25,12 +26,16 @@ const MyContactsPage: React.FC = () => {
 				<PeLogo imageSrc={emailicon}
 				        alt="Email me"
 				        href="mailto:%20bolodiab3007@gmail.com" />
+				<PeLogo imageSrc={buymeacoffee}
+				        alt="Email me"
+				        href="https://www.buymeacoffee.com/nevolodia" />
 			</PeInline>
 
 			<PeSpacer height="small" />
 
+
 			<PeVideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-			         provider="youtube" />
+			         provider="youtube"/>
 		</>
 	);
 }
