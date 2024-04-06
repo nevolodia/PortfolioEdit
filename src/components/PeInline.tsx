@@ -1,18 +1,37 @@
 import "../styles/pe-inline.css";
-import React from "react";
+import React, {useState} from "react";
 
 interface PeInlineProps {
 	sameWidth?: boolean;
-	noWarp?: boolean;
+	warp?: boolean;
+	warpAfter?: number;
 	children?: React.ReactNode;
 }
 
 const PeInline = (props: PeInlineProps) => {
-	let sameWidthClassNames = props.sameWidth ? "pe-inline-same-width" : "";
-	let noWarpClassNames = props.noWarp ? "pe-inline-no-warp" : "";
+	let sameWidthClassName = props.sameWidth ? "pe-inline-same-width" : "";
+	const [noWarpClassName, setNoWarpClassName] = useState<string>("");
+
+	// on resize
+	function updateNoWarpClassName() {
+		if (props.warp && window.innerWidth > props.warpAfter!) {
+			setNoWarpClassName("pe-inline-no-warp");
+		}
+		else {
+			setNoWarpClassName("");
+		}
+
+	}
+
+	props.warp && props.warpAfter && window.addEventListener("resize", updateNoWarpClassName);
+
+	// on mount
+	useState(() => {
+		updateNoWarpClassName();
+	});
 
 	return (
-		<div className={"pe-inline " + sameWidthClassNames + " " + noWarpClassNames}>
+		<div className={"pe-inline " + sameWidthClassName + " " + noWarpClassName}>
 			{props.children}
 		</div>
 	)

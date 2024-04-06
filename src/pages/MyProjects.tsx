@@ -14,7 +14,7 @@ const MyProjectsPage: React.FC = () => {
 				More projects to come!
 			</PeTitle>
 
-			<PeInline sameWidth noWarp>
+			<PeInline sameWidth warp warpAfter={768}>
 
 				<PeHorizontalCard title="PortfolioEdit"
 				                  tag="In development"
