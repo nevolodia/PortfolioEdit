@@ -34,6 +34,12 @@ const MyProjectsPage: React.FC = () => {
 				/>
 
 			</PeInline>
+
+			<PeVerticalCard title="Google Fonts Auto Downloader"
+			                tag="In development"
+			                description="I am currently developing a tool that will enable users to download .woff2
+			                Google Font files (currently, Google Fonts only allows downloading only .ttf files)."
+			                />
 		</>
 	);
 }
