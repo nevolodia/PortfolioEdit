@@ -25,16 +25,21 @@ jobs:
 
       - name: Build React App
         run: npm run build
+
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2
+        with:
+          server_ip: ${{ secrets.SERVER_IP }}
+          server_username: ${{ secrets.SERVER_USERNAME }}
+          server_key: ${{ secrets.KEY }}
+          local_path: ./build
+          remote_path: /path/to/deploy
       
-      - name: Deploy to DigitalOcean Droplet
+      - name: Restart nginx
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            # Copy the build directory to the remote server
-            scp -r ./build/* ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/nevolodia.com/html/
-
-            # Restart nginx on the remote server
-            ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} 'sudo systemctl restart nginx'
+            sudo systemctl restart nginx
