@@ -9,10 +9,7 @@ repo, buy me a coffee😊).
 
 EditPortfolio consists of custom React components that work like HTML tags and automatic page routing.
 
-|              Pe Blocks              |                   Result                   |
-|:-----------------------------------:|:------------------------------------------:|
-| ![Pe Block Example](./readme01.jpg) | ![Pe Block Result Example](./readme02.jpg) |
-
+![EditMe Portfolio](./readme01.jpg)
 
 ## GitHub Actions CD/CI.
 
