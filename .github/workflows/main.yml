@@ -34,12 +34,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           source: ./build
           target: var/www/nevolodia.com/html/
-      
-      - name: Restart nginx
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          script: |
+          SCRIPT_AFTER: |
             sudo systemctl restart nginx
