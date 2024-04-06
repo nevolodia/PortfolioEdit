@@ -1,6 +1,5 @@
 import "../styles/pe-horizontal-card.css";
 import PeTitle from "./PeTitle";
-import PeLink from "./PeLink";
 
 interface PeHorizontalCardProps {
 	title: string;
