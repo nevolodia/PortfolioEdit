@@ -7,6 +7,8 @@ import PeImage from "../components/PeImage";
 import PeBlock from "../components/PeBlock";
 import PeGallery from "../components/PeGallery";
 import PeVerticalCard from "../components/PeVerticalCard";
+import diplomaEconOpen24 from "../assets/images/diploma_econ_open_24.jpg";
+import diplomaEconOpen24Small from "../assets/images/diploma_econ_open_24_small.jpg";
 import diplomaEconLv23 from "../assets/images/diploma_econ_lv_23.jpg";
 import diplomaEconLv23Small from "../assets/images/diploma_econ_lv_23_small.jpg";
 import diplomaEconLv24 from "../assets/images/diploma_econ_lv_24.jpg";
@@ -87,12 +89,15 @@ const MyHomePage: React.FC = () => {
 						<PeImage src={diplomaEconLv24Small}
 						         srcBig={diplomaEconLv24}
 						         alt="2024 year economics diploma" />
-						<PeImage src={diplomaEconRiga23Small}
-						         srcBig={diplomaEconRiga23}
-						         alt="2023 year economics riga diploma" />
+						<PeImage src={diplomaEconOpen24Small}
+						         srcBig={diplomaEconOpen24}
+						         alt="2024 year open economics diploma" />
 						<PeImage src={diplomaRu24Small}
 						         srcBig={diplomaRu24}
 						         alt="202r year russian language diploma" />
+						<PeImage src={diplomaEconRiga23Small}
+						         srcBig={diplomaEconRiga23}
+						         alt="2023 year economics riga diploma" />
 						<PeImage src={diplomaEconLv23Small}
 						         srcBig={diplomaEconLv23}
 						         alt="2023 year economics diploma" />
