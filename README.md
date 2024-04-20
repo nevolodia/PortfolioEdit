@@ -3,7 +3,7 @@
 # EditMe Portfolio
 
 EditPortfolio is React framework to make your own portfolio. I use it for my personal portfolio, but you can easily
-fork / download && customize it to your needs (and star this repo, buy me a coffee😊).
+fork / download && customize it to your needs (and star this repo, [buy me a coffee😊](https://buymeacoffee.com/nevolodia)).
 
 EditPortfolio consists of custom React components and automatic page routing.
 
