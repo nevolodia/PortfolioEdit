@@ -1,6 +1,5 @@
 import "../styles/pe-vertical-card.css";
 import PeTitle from "./PeTitle";
-import PeLink from "./PeLink";
 
 interface PeVerticalCardProps {
 	title: string;
@@ -17,7 +16,7 @@ const PeVerticalCard = (props: PeVerticalCardProps) => {
 	let card = (
 		<div className={"pe-vertical-card " + linkClassName}
 		     style={{maxWidth: props.maxWidth? props.maxWidth : "100%"}}
-		     onClick={(e) => {
+		     onClick={() => {
 				 			     if (props.linkHref) {
 				     window.open(props.linkHref, "_blank");
 			     }

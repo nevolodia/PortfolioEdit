@@ -62,7 +62,7 @@ const PeGallery = (props: PeGalleryProps) => {
 
 	let wrappedChildren: React.ReactNode[] = [];
 	if (props.children) {
-		React.Children.toArray(props.children).map((child: React.ReactNode, index: number) => {
+		React.Children.toArray(props.children).forEach((child: React.ReactNode, index: number)=> {
 			wrappedChildren.push(wrapChildrenWithDiv(child, index));
 		});
 	}

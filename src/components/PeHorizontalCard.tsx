@@ -17,7 +17,7 @@ const PeHorizontalCard = (props: PeHorizontalCardProps) => {
 	let card = (
 		<div className={"pe-horizontal-card " + linkClassName}
 		     style={{maxWidth: props.maxWidth? props.maxWidth : "100%"}}
-		     onClick={(e) => {
+		     onClick={() => {
 			     if (props.linkHref) {
 				     window.open(props.linkHref, "_blank");
 			     }

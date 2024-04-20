@@ -20,7 +20,7 @@ const PeLogo = (props: PeLogoProps) => {
 
 	return (
 		<div className={"pe-logo " + linkClassName}
-			 onClick={(e) => {
+			 onClick={() => {
 				 if (props.href) {
 					 window.open(props.href, "_blank");
 				 }
