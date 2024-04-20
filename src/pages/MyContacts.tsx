@@ -2,7 +2,6 @@ import React from "react";
 import PeLogo from "../components/PeLogo";
 import PeTitle from "../components/PeTitle";
 import PeVideo from "../components/PeVideo";
-import PeSpacer from "../components/PeSpacer";
 import PeInline from "../components/PeInline";
 import githublogo from "../assets/images/github-logo.png";
 import linkedinlogo from "../assets/images/linkedin-logo.png";
@@ -30,9 +29,6 @@ const MyContactsPage: React.FC = () => {
 				        alt="Email me"
 				        href="https://www.buymeacoffee.com/nevolodia" />
 			</PeInline>
-
-			<PeSpacer height="small" />
-
 
 			<PeVideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 			         provider="youtube"/>
