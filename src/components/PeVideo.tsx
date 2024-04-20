@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import "../styles/pe-video.css";
 import Plyr, {APITypes} from "plyr-react";
 import "plyr-react/plyr.css";
 
@@ -45,7 +46,7 @@ const PeVideo = (props: PeVideoProps) => {
 		) : null;
 
 	return (
-		<div>
+		<div className="pe-video">
 			{plyrVideo}
 		</div>
 	);
