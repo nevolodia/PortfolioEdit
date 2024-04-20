@@ -5,6 +5,7 @@ import PeVerticalCard from "../components/PeVerticalCard";
 import PeHorizontalCard from "../components/PeHorizontalCard";
 import hackermangif from "../assets/images/hackerman.gif";
 import binatec from "../assets/images/binatec01.jpg";
+import {Helmet} from "react-helmet";
 
 const MyProjectsPage: React.FC = () => {
 	return (
