@@ -39,7 +39,7 @@ Deployment uses these secrets: `HOST`, `USERNAME`, `KEY` (SSH Private Key), `SER
 server).
 
 
-## Uses.
+## Uses
 
 1. React with TypeScript.
 2. Bootstrap styles (only global styles without Bootstrap component styles).
