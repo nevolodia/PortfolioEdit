@@ -37,12 +37,12 @@ const MyHomePage: React.FC = () => {
 				        Working on this very project you see (more info on My Projects page)."
 				        imageSrc={meandpanda}/>
 
-
 				<PeText>
 					Since early childhood I have been interested in computer science.
 					From that time I have been working and felt in love with <PeWarp>Golang</PeWarp>, <PeWarp>
 					C#</PeWarp> and <PeWarp>React</PeWarp>.
 				</PeText>
+
 				<PeImage src={meingermanySmall}
 				         srcBig={meingermany}
 				         alt="meme gif"
@@ -52,11 +52,13 @@ const MyHomePage: React.FC = () => {
 
 			<PeBlock>
 				<PeTitle size={2}>Education.</PeTitle>
+
 				<PeText>
 					I am student in <PeLink href="http://r1g.edu.lv/">RV1G</PeLink> and
 					future student in <PeLink href="https://www.tudelft.nl/">Tu Delft university</PeLink>,
 					where I will study Computer Science and Engineering.
 				</PeText>
+
 				<PeText>
 					In my future I want to focus on <PeWarp>Machine Learning</PeWarp>.
 					Likely, I will try myself in field connected to analysis of <PeWarp>Macroeconomics</PeWarp>.
@@ -65,10 +67,12 @@ const MyHomePage: React.FC = () => {
 
 			<PeBlock>
 				<PeTitle size={2}>Work and Projects.</PeTitle>
+
 				<PeText>
 					I have created commerce website <PeLink href="https://binatec.eu/">Binatec.eu
 					</PeLink> using <PeWarp>Wordpress</PeWarp> and <PeWarp>Woocommerce</PeWarp>.
 				</PeText>
+
 				<PeText>
 					My open source contribution includes this very website, which is created using <PeWarp>React
 					</PeWarp> and <PeWarp>Typescript</PeWarp> and is publicly available on <PeLink href="github.com/">
@@ -78,12 +82,14 @@ const MyHomePage: React.FC = () => {
 
 			<PeBlock noSpacer>
 				<PeTitle size={2}>Awards.</PeTitle>
+
 				<PeText>
 					I have won <PeWarp>1st place</PeWarp> in <PeWarp>Latvian Open Olympiad in Economics</PeWarp>
 					in 2024, <PeWarp>2nd place</PeWarp> in <PeWarp>Latvian State Olympiad in Economics</PeWarp> in both
 					2023 and 2024.
 					Furthermore, I have won several other awards, all of which are shown below.
 				</PeText>
+
 				<PeWarp backgroundColor="light">
 					<PeGallery columns={3}>
 						<PeImage src={diplomaEconLv24Small}
