@@ -24,6 +24,21 @@ npm install
 ```
 
 
+## Usage overview
+
+In order to create your portfolio, you need to take the following steps:
+
+1. Change following files:
+	- `src/page_parts/Layout.tsx` - change the site title and pages to be displayed in the navigation bar.
+	- `src/page_parts/Footer.tsx` - change the footer content.
+2. Add pages to the `src/pages` directory and include them in the `src/App.tsx` file as Routes.
+3. Customize the `src/styles/editme.css` file to change the global styles.
+4. Customize the `public/index.html` and `public/manifest.json` files to change the favicon, title, and other properties.
+
+Each page is a simple React component that usually consists of:
+- Content as JSX in the `return` statement.
+- `PePageMeta` - page meta information (title, description, keywords).
+
 ## GitHub Actions CD/CI
 
 As I use `GitHub Actions` to deploy my own portfolio to `Ubuntu Nginx` server, the project is easily configurable to
@@ -39,7 +54,7 @@ Deployment uses these secrets: `HOST`, `USERNAME`, `KEY` (SSH Private Key), `SER
 server).
 
 
-## Uses.
+## Uses
 
 1. React with TypeScript.
 2. Bootstrap styles (only global styles without Bootstrap component styles).
