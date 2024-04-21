@@ -6,10 +6,13 @@ import PeImage from "../components/PeImage";
 import PeSpacer from "../components/PeSpacer";
 import the404gif from "../assets/images/404.gif";
 import the404gif_big from "../assets/images/404-big.gif";
+import PePageMeta from "../components/PePageMeta";
 
 const The404Page: React.FC = () => {
 	return (
 		<>
+			<PePageMeta title="404: Not found" />
+
 			<PeTitle>
 				Not found here... <br />
 				Maybe in another

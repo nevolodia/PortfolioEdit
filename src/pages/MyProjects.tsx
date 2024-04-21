@@ -5,10 +5,13 @@ import PeVerticalCard from "../components/PeVerticalCard";
 import PeHorizontalCard from "../components/PeHorizontalCard";
 import hackermangif from "../assets/images/hackerman.gif";
 import binatec from "../assets/images/binatec01.jpg";
+import PePageMeta from "../components/PePageMeta";
 
 const MyProjectsPage: React.FC = () => {
 	return (
 		<>
+			<PePageMeta title="My projects" />
+
 			<PeTitle bottomMargin="large">
 				Under construction... <br/>
 				More projects to come!

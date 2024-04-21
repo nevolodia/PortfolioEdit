@@ -7,10 +7,13 @@ import githublogo from "../assets/images/github-logo.png";
 import linkedinlogo from "../assets/images/linkedin-logo.png";
 import emailicon from "../assets/images/email-icon.png";
 import buymeacoffee from "../assets/images/buymeacoffe.png";
+import PePageMeta from "../components/PePageMeta";
 
 const MyContactsPage: React.FC = () => {
 	return (
 		<>
+			<PePageMeta title="My contacts" />
+
 			<PeTitle>
 				Find me here.
 			</PeTitle>
