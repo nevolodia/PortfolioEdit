@@ -26,6 +26,8 @@ npm install
 
 ## Usage overview
 
+### General setup
+
 In order to create your portfolio, you need to take the following steps:
 
 1. Change following files:
@@ -38,6 +40,14 @@ In order to create your portfolio, you need to take the following steps:
 Each page is a simple React component that usually consists of:
 - Content as JSX in the `return` statement.
 - `PePageMeta` - page meta information (title, description, keywords).
+
+### Pe Components
+
+[**Full component documentation.**](./docs/components.md)
+
+The project includes various components that are specifically designed for the portfolio.
+They are located in the `src/components` directory and are prefixed with `Pe` (PortfolioEdit).
+
 
 ## GitHub Actions CD/CI
 
