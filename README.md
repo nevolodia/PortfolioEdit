@@ -9,7 +9,22 @@ EditPortfolio consists of custom React components and automatic page routing.
 
 ![EditMe Portfolio](./readme01.jpg)
 
-## GitHub Actions CD/CI.
+
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/hackername1/PortfolioEdit.git
+cd PortfolioEdit
+git remote remove origin # remove the origin
+
+# Install dependencies
+npm install
+
+# To be written...
+```
+
+
+## GitHub Actions CD/CI
 
 As I use `GitHub Actions` to deploy my own portfolio to `Ubuntu Nginx` server, the project is easily configurable to
 work in similar environment. You are welcome to check out the [GitHub Actions](.github/workflows/main.yml) file and
