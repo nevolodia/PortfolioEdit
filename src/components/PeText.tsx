@@ -10,14 +10,14 @@ const PeText = (props: PeTextProps) => {
 	let weightClass = "";
 	switch (props.weight) {
 		case "bold":
-			weightClass = "pe-text-bold";
+			weightClass = "pe-text-weight-bold";
 			break;
 		default:
 		case "normal":
-			weightClass = "pe-text-normal";
+			weightClass = "pe-text-weight-normal";
 			break;
 		case "light":
-			weightClass = "pe-text-light";
+			weightClass = "pe-text-weight-light";
 			break;
 	}
 

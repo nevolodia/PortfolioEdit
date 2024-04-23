@@ -2,7 +2,7 @@ import "../styles/pe-title.css";
 import React from "react";
 
 interface PeTitleProps {
-	size?: 1 | 2 | 3;
+	size?: "normal" | "small" | "smaller";
 	weight?: "bold" | "normal" | "light";
 	children?: React.ReactNode;
 }
@@ -11,14 +11,14 @@ const PeTitle = (props: PeTitleProps) => {
 	let sizeClass = "";
 	switch (props.size) {
 		default:
-		case 1:
-			sizeClass = "pe-title-1";
+		case "normal":
+			sizeClass = "pe-title-size-normal";
 			break;
-		case 2:
-			sizeClass = "pe-title-2";
+		case "small":
+			sizeClass = "pe-title-size-small";
 			break;
-		case 3:
-			sizeClass = "pe-title-3";
+		case "smaller":
+			sizeClass = "pe-title-size-smaller";
 			break;
 	}
 
@@ -26,13 +26,13 @@ const PeTitle = (props: PeTitleProps) => {
 	switch (props.weight) {
 		default:
 		case "bold":
-			weightClass = "pe-title-bold";
+			weightClass = "pe-title-weight-bold";
 			break;
 		case "normal":
-			weightClass = "pe-title-normal";
+			weightClass = "pe-title-weight-normal";
 			break;
 		case "light":
-			weightClass = "pe-title-light";
+			weightClass = "pe-title-weight-light";
 			break;
 	}
 

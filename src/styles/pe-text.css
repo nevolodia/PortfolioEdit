@@ -7,14 +7,14 @@
 
 /* Weight */
 
-.pe-text-bold {
+.pe-text-weight-bold {
 	font-weight: 900;
 }
 
-.pe-text-normal {
+.pe-text-weight-normal {
 	font-weight: 400;
 }
 
-.pe-text-light {
+.pe-text-weight-light {
 	font-weight: 200;
 }
