@@ -28,7 +28,7 @@ npm install
 
 ### General setup
 
-[**Full setup documentation.**](./docs/setup.md)
+[**Full setup documentation.**](./documentation/setup.md)
 
 In order to create your portfolio, you need to take the following steps:
 
@@ -45,7 +45,7 @@ Each page is a simple React component that usually consists of:
 
 ### Pe Components
 
-[**Full component documentation.**](./docs/components.md)
+[**Full component documentation.**](./documentation/components.md)
 
 The project includes various components that are specifically designed for the portfolio.
 They are located in the `src/components` directory and are prefixed with `Pe` (PortfolioEdit).
