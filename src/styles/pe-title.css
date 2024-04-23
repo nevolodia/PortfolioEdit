@@ -1,5 +1,6 @@
 .pe-title {
 	overflow-wrap: anywhere;
+	margin-bottom: 1rem;
 }
 
 /* Size */
@@ -42,18 +43,4 @@
 
 .pe-title-light {
 	font-weight: 300;
-}
-
-/* Bottom margin */
-
-.pe-title-no-bottom-margin {
-	margin-bottom: 0;
-}
-
-.pe-title-bottom-margin-normal {
-	margin-bottom: 1rem;
-}
-
-.pe-title-bottom-margin-large {
-	margin-bottom: 1.25rem;
 }

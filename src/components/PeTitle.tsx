@@ -4,7 +4,6 @@ import React from "react";
 interface PeTitleProps {
 	size?: 1 | 2 | 3;
 	weight?: "bold" | "normal" | "light";
-	bottomMargin?: "no-margin" | "normal" | "large";
 	children?: React.ReactNode;
 }
 
@@ -37,22 +36,8 @@ const PeTitle = (props: PeTitleProps) => {
 			break;
 	}
 
-	let marginBottomClass = "";
-	switch (props.bottomMargin) {
-		case "no-margin":
-			marginBottomClass = "pe-title-no-bottom-margin";
-			break;
-		default:
-		case "normal":
-			marginBottomClass = "pe-title-bottom-margin-normal";
-			break;
-		case "large":
-			marginBottomClass = "pe-title-bottom-margin-large";
-			break;
-	}
-
 	return (
-		<h1 className={"pe-title " + sizeClass + " " + weightClass + " " + marginBottomClass}>
+		<h1 className={"pe-title " + sizeClass + " " + weightClass}>
 			{props.children}
 		</h1>
 	)
