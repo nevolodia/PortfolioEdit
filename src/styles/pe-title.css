@@ -44,3 +44,9 @@
 .pe-title-weight-light {
 	font-weight: 300;
 }
+
+/* Bottom margin */
+
+.pe-title-no-bottom-margin {
+	margin-bottom: 0;
+}
