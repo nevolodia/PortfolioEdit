@@ -28,6 +28,8 @@ npm install
 
 ### General setup
 
+[**Full setup documentation.**](./docs/setup.md)
+
 In order to create your portfolio, you need to take the following steps:
 
 1. Change following files:
@@ -47,6 +49,10 @@ Each page is a simple React component that usually consists of:
 
 The project includes various components that are specifically designed for the portfolio.
 They are located in the `src/components` directory and are prefixed with `Pe` (PortfolioEdit).
+
+### General recommendations
+
+1. Store fonts, images, and other assets in the `src/assets` directory.
 
 
 ## GitHub Actions CD/CI
