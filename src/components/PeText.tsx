@@ -3,7 +3,6 @@ import React from "react";
 
 interface PeTextProps {
 	weight?: "bold" | "normal" | "light";
-	style?: "secondary";
 	children?: React.ReactNode;
 }
 
@@ -22,15 +21,8 @@ const PeText = (props: PeTextProps) => {
 			break;
 	}
 
-	let styleClass = "";
-	switch (props.style) {
-		case "secondary":
-			styleClass = "pe-text-secondary";
-			break;
-	}
-
 	return (
-		<p className={"pe-text " + weightClass + " " + styleClass}>
+		<p className={"pe-text " + weightClass}>
 			{props.children}
 		</p>
 	)
