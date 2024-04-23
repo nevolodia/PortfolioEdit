@@ -25,7 +25,7 @@ const MyHomePage: React.FC = () => {
 	return (
 		<>
 			<PeBlock>
-				<PeTitle bottomMargin="large">
+				<PeTitle>
 					Hello, world! <br/>
 					I'm Volodia Kiril Bickov!
 				</PeTitle>
@@ -51,7 +51,7 @@ const MyHomePage: React.FC = () => {
 			</PeBlock>
 
 			<PeBlock>
-				<PeTitle size={2}>Education.</PeTitle>
+				<PeTitle size="small">Education.</PeTitle>
 
 				<PeText>
 					I am student in <PeLink href="http://r1g.edu.lv/">RV1G</PeLink> and
@@ -66,7 +66,7 @@ const MyHomePage: React.FC = () => {
 			</PeBlock>
 
 			<PeBlock>
-				<PeTitle size={2}>Work and Projects.</PeTitle>
+				<PeTitle size="small">Work and Projects.</PeTitle>
 
 				<PeText>
 					I have created commerce website <PeLink href="https://binatec.eu/">Binatec.eu
@@ -81,7 +81,7 @@ const MyHomePage: React.FC = () => {
 			</PeBlock>
 
 			<PeBlock noSpacer>
-				<PeTitle size={2}>Awards.</PeTitle>
+				<PeTitle size="small">Awards.</PeTitle>
 
 				<PeText>
 					I have won <PeWarp>1st place</PeWarp> in <PeWarp>Latvian Open Olympiad in Economics</PeWarp>

@@ -32,7 +32,7 @@ const PeHorizontalCard = (props: PeHorizontalCardProps) => {
 
 			<div className={"pe-horizontal-card-content " + isImageClass}>
 				<div className="pe-horizontal-card-content-top">
-					<PeTitle size={2} weight="normal" bottomMargin="no-margin">
+					<PeTitle size="small" weight="normal" noBottomMargin>
 						{props.title}
 					</PeTitle>
 					<h6 className="pe-horizontal-card-subtitle">
